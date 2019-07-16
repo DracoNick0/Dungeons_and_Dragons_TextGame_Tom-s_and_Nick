@@ -9,6 +9,8 @@ using namespace std;
 void AttackSystem()
 {
 	tempplayer Tester;
+	cout << "READY!" << endl << endl;
+	cout << "BEGIN!" << endl << endl;
 	cout << "The enemy is ready to fight, what do you do?" << endl;
 	cout << "1. Attack" << endl;
 	cout << "2. Use Item" << endl;

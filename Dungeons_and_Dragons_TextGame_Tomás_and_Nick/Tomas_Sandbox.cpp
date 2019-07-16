@@ -14,7 +14,8 @@ void Story1(string name)
 	cout << "The Grandmaster wants all champions to be ready for the big fight." << endl;
 	cout << "You are the almighty " << name << " right? The Grandmaster was excited when you agreed to this." << endl;
 	cout << "Im sorry I haven't properly introduced myslef my name is Tomick your guide throughout the contest." << endl;
-	cout << "Now look your first openent is the a county champion from Greenwood so get ready." << endl;
-
-
+	cout << "Now look your first openent is the a county champion from Greenwood." << endl;
+	cout << "-Guard shoves you into the arena-" << endl << endl << endl;
+	cout << "-The crowd is cheering-" << endl;
+	cout << "-And you are ready-" << endl << endl;
 }
