@@ -7,5 +7,5 @@ using namespace std;
 
 void Story1()
 {
-	cout << "I have you now!" << endl << endl << endl;
+	cout << "" << endl << endl << endl;
 }
