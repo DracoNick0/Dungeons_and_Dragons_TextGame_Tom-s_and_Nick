@@ -2,13 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include "Tomas_Sandbox.h"
+#include "Nicholas_Sandbox.h"
 using namespace std;
 
 float character;
 float player;
 string name;
 
-//Hello nick
+
 struct Knight
 {
 	float PlayerHP = 10;
@@ -64,7 +65,7 @@ struct tempplayer
 	float PlayerDodge = (rand() % 1) + 1;
 	float Playerisdead = false;
 };
-//test change
+
 void CharacterChoice()
 {
 	
