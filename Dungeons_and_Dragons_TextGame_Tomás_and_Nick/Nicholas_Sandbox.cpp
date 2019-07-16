@@ -9,7 +9,7 @@ using namespace std;
 void AttackSystem()
 {
 	tempplayer Tester;
-	cout << "An enemy has appeared what do you do?" << endl;
+	cout << "The enemy is ready to fight, what do you do?" << endl;
 	cout << "1. Attack" << endl;
 	cout << "2. Use Item" << endl;
 	cout << "3. Run" << endl;

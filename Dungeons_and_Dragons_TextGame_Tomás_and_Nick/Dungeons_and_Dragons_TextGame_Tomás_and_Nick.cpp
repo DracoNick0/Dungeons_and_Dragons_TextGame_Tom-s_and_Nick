@@ -13,7 +13,7 @@ void CharacterChoice()
 {
 	cout << "Welcome my child, I shall grant you a name. What will your name be." << endl;
 	cin >> name;
-	cout << "Fine, I shall grant you the name, " << name << " ." << endl;
+	cout << "Fine, I shall grant you the name, " << name << "." << endl;
 	cout << "I will give you a decision, a choice! What will you be? A warrior? An asssassin? A tank? Or a Mage?" << endl;
 	cout << "1. Warrior" << endl;
 	cout << "2. Assassin" << endl;
@@ -56,47 +56,13 @@ void CharacterChoice()
 		cout << "Now go to sleep my child the contest will begin soon." << endl << endl << endl;
 	}
 }
-void AttackSystem()
-{
-	tempplayer Tester;
-	cout << "An enemy has appeared what do you do?" << endl;
-	cout << "1. Attack" << endl;
-	cout << "2. Use Item" << endl;
-	cout << "3. Run" << endl;
-	cout << "4. Surrender" << endl;
-
-	float choice;
-	cin >> choice;
-	if (choice == 1)
-	{
-		cout << "You chose to attack." << endl;
-		Tester.PlayerHitChance;
-	}
-	else if (choice == 2)
-	{
-		
-	}
-	else if (choice == 3)
-	{
-		cout << "Which item will you use?" << endl;
-	}
-	else if (choice == 4)
-	{
-
-	}
-	else
-	{
-		cout << "I'm sorry, that is not a choice, please pick again." << endl;
-	}
-}
-
-
 
 
 int main()
 {
 	srand(time(NULL));
-	AttackSystem();
 	CharacterChoice();
-	Story1();
+	Story1(name);
+	AttackSystem();
+	
 }

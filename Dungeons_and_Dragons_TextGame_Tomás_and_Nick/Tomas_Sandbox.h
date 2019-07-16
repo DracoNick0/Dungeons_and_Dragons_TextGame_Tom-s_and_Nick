@@ -1,2 +1,6 @@
 #pragma once
-void Story1();
+#include <iostream>
+#include <stdlib.h>
+
+void Story1(std::string name);
+
