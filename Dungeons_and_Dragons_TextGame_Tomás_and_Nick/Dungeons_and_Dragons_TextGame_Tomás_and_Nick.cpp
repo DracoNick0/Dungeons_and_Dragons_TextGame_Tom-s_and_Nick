@@ -153,8 +153,8 @@ void AttackSystem()
 int main()
 {
 	srand(time(NULL));
-	Story1();
-	CharacterChoice();
 	
+	CharacterChoice();
+	Story1();
 	AttackSystem();
 }
