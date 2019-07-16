@@ -7,6 +7,7 @@ float character;
 float player;
 string name;
 
+//Hello nick
 struct Knight
 {
 	float PlayerHP = 10;
