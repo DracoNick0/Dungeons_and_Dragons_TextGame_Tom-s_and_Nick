@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
+#include "Tomas_Sandbox.h"
 using namespace std;
 
 float character;
@@ -146,16 +147,14 @@ void AttackSystem()
 	}
 }
 
-void Story1()
-{
 
-}
 
 
 int main()
 {
 	srand(time(NULL));
-	CharacterChoice();
 	Story1();
+	CharacterChoice();
+	
 	AttackSystem();
 }

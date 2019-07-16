@@ -18,5 +18,13 @@
     <ClCompile Include="Dungeons_and_Dragons_TextGame_Tomás_and_Nick.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Tomas_Sandbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tomas_Sandbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
