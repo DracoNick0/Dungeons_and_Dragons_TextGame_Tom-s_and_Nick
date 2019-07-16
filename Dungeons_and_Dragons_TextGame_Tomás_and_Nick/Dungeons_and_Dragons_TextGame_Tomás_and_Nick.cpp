@@ -111,6 +111,7 @@ void CharacterChoice()
 			cout << "Please pick again, this is not a choice." << endl;
 			temp = 0;
 		}
+		cout << "Now go to sleep my child the contest will begin soon." << endl;
 	}
 }
 void AttackSystem()
