@@ -9,11 +9,11 @@ using namespace std;
 void AttackSystem()
 {
 	tempplayer Tester;
-	cout << "READY!" << endl << endl;
+	cout << "READY!" << endl;
 	cout << "BEGIN!" << endl << endl;
-	cout << "The enemy is ready to fight, what do you do?" << endl;
+	cout << "The enemy is ready to fight, what do you do?" << endl << endl;
 	cout << "1. Attack" << endl;
-	cout << "2. Use Item" << endl;
+	cout << "2. Skill" << endl;
 	cout << "3. Run" << endl;
 	cout << "4. Surrender" << endl;
 
@@ -30,7 +30,7 @@ void AttackSystem()
 	}
 	else if (choice == 3)
 	{
-		cout << "Which item will you use?" << endl;
+		
 	}
 	else if (choice == 4)
 	{
