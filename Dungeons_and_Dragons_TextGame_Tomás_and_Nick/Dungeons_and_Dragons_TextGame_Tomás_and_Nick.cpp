@@ -9,7 +9,7 @@ float character;
 float player;
 string name;
 
-
+//go
 struct Knight
 {
 	float PlayerHP = 10;
