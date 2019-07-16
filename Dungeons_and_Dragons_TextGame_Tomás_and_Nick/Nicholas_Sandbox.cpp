@@ -3,6 +3,8 @@
 #include <time.h>
 #include "Tomas_Sandbox.h"
 #include "Nicholas_Sandbox.h"
+
+
 using namespace std;
 
 
@@ -21,12 +23,12 @@ void AttackSystem()
 	cin >> choice;
 	if (choice == 1)
 	{
-		cout << "You chose to attack." << endl;
+		cout << "You chose to upper cut." << endl;
 		Tester.PlayerHitChance;
 	}
 	else if (choice == 2)
 	{
-
+		cout << "You chose to kick low";
 	}
 	else if (choice == 3)
 	{
