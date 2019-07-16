@@ -3,6 +3,7 @@
 #include <time.h>
 #include "Tomas_Sandbox.h"
 #include "Nicholas_Sandbox.h"
+using namespace std;
 
 struct Knight
 {
