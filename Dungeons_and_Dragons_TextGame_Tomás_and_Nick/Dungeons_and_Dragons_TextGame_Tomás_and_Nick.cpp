@@ -9,7 +9,6 @@ float character;
 float player;
 string name;
 
-//go
 struct Knight
 {
 	float PlayerHP = 10;
@@ -154,8 +153,6 @@ void AttackSystem()
 int main()
 {
 	srand(time(NULL));
-	
 	CharacterChoice();
 	Story1();
-	AttackSystem();
 }
