@@ -14,11 +14,12 @@ void CharacterChoice()
 {
 	cout << "Welcome my child, I shall grant you a name. What will your name be." << endl;
 	cin >> name;
-	if (name == "keegan" || "Keegan" || "Cass" ||"cass" || "Will" ||"will" )
+	if (name == "keegan" || name == "Keegan" || name == "Cass" || name == "cass" || name == "Will" || name == "will" )
 	{
-		cout << "you win the game!";
+		cout << "You Cheater! How dare you use this cheat code!";
 		exit(0);
 	}
+	
 	cout << "Fine, I shall grant you the name, " << name << "." << endl;
 	cout << "I will give you a decision, a choice! What will you be? A warrior? An asssassin? A tank? Or a Mage?" << endl;
 	cout << "1. Warrior" << endl;
