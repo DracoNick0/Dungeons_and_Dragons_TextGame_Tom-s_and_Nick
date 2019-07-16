@@ -11,8 +11,6 @@ string name;
 
 void CharacterChoice()
 {
-	
-	
 	cout << "Welcome my child, I shall grant you a name. What will your name be." << endl;
 	cin >> name;
 	cout << "Fine, I shall grant you the name, " << name << " ." << endl;
@@ -98,6 +96,7 @@ void AttackSystem()
 int main()
 {
 	srand(time(NULL));
+	AttackSystem();
 	CharacterChoice();
 	Story1();
 }
