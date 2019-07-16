@@ -62,7 +62,7 @@ struct tempplayer
 	float PlayerDodge = (rand() % 1) + 1;
 	float Playerisdead = false;
 };
-
+//test change
 void CharacterChoice()
 {
 	
