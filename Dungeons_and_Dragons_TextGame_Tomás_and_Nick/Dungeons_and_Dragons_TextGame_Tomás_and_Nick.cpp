@@ -3,6 +3,7 @@
 #include <time.h>
 #include "Tomas_Sandbox.h"
 #include "Nicholas_Sandbox.h"
+#include <stdio.h>
 using namespace std;
 
 float character;
@@ -13,6 +14,11 @@ void CharacterChoice()
 {
 	cout << "Welcome my child, I shall grant you a name. What will your name be." << endl;
 	cin >> name;
+	if (name == "keegan" || "Keegan" || "Cass" ||"cass" || "Will" ||"will" )
+	{
+		cout << "you win the game!";
+		exit(0);
+	}
 	cout << "Fine, I shall grant you the name, " << name << "." << endl;
 	cout << "I will give you a decision, a choice! What will you be? A warrior? An asssassin? A tank? Or a Mage?" << endl;
 	cout << "1. Warrior" << endl;
