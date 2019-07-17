@@ -18,6 +18,8 @@ void Story1(string name)
 	cout << "-Guard shoves you into the arena-" << endl << endl << endl;
 	cout << "-The crowd is cheering-" << endl;
 	cout << "-And you are ready-" << endl << endl;
+	cout << "READY!" << endl;
+	cout << "BEGIN!" << endl;
 }
 
 void Story2(string name)
