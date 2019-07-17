@@ -16,7 +16,6 @@ void AttackSystem()
 
 	cout << "READY!" << endl;
 	cout << "BEGIN!" << endl << endl;
-	cout << Player.PlayerHitChance << Player.PlayerHitDamage << Player.PlayerCritChance << Player.PlayerCritDamage << endl;
 	cout << "The enemy is ready to fight, what do you do?" << endl << endl;
 	cout << "1. Attack" << endl;
 	cout << "2. Special Attack" << endl;

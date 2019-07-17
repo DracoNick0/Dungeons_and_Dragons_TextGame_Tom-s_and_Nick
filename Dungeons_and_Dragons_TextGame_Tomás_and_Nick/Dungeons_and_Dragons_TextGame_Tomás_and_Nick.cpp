@@ -45,10 +45,10 @@ void CharacterChoice()
 			Player.PlayerHP = 10;
 			Player.PlayerArmor = 10;
 			Player.PlayerHitChance = 100;
-			Player.PlayerHitDamage = 100;
+			Player.PlayerHitDamage = 6;
 			Player.PlayerCritChance = 100;
-			Player.PlayerCritDamage = 100;
-			Player.PlayerDodge;
+			Player.PlayerCritDamage = 10;
+			Player.PlayerDodge = 5;
 			Player.Playerisdead = false;
 		}
 		else if (character == 2)
@@ -58,11 +58,11 @@ void CharacterChoice()
 			Player.playerType = cAssassin;
 			Player.PlayerHP = 5;
 			Player.PlayerArmor = 0;
-			Player.PlayerHitChance;
-			Player.PlayerHitDamage;
+			Player.PlayerHitChance = 100;
+			Player.PlayerHitDamage = 3;
 			Player.PlayerCritChance;
-			Player.PlayerCritDamage;
-			Player.PlayerDodge;
+			Player.PlayerCritDamage = ;
+			Player.PlayerDodge = 10;
 			Player.Playerisdead = false;
 		}
 		else if (character == 3)
