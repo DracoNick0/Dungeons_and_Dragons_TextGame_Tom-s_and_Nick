@@ -13,7 +13,7 @@ string name;
 
 void CharacterChoice()
 {
-	tempplayer player = PlayerManager::GetPlayerManager().GetPlayer();
+	tempplayer = PlayerManager::GetPlayerManager;
 
 
 
@@ -57,7 +57,7 @@ void CharacterChoice()
 			cout << "Exellent choice! You have chosen to become an assassin. I shall grant you with a steathy body, sneaky hands and a starter pair of daggers at your desposal!" << endl;
 			characterchoice = 2;
 			temp = 1;
-			player.playerType = cAssassin
+			player.playerType = cAssassin;
 			player.PlayerHP = 5;
 			player.PlayerArmor = 0;
 			player.PlayerHitChance = (rand() % 5) + 1;
@@ -72,7 +72,7 @@ void CharacterChoice()
 			cout << "Exellent choice! You have chosen to become a tank. I shall grant you with a sturdy body, knowlage of support skills and a heavy starter shield at your desposal!" << endl;
 			characterchoice = 3;
 			temp = 1;
-			player.playerType = cTank
+			player.playerType = cTank;
 			player.PlayerHP = 20;
 			player.PlayerArmor = 20;
 			player.PlayerHitChance = (rand() % 20) + 1;
@@ -87,7 +87,7 @@ void CharacterChoice()
 			cout << "Fine, you have chosen to become a mage so I shall grant you the skill to converse with spirits, the power to enchant your voice with elements and the knowlage of ancient runes!" << endl;
 			characterchoice = 4;
 			temp = 1;
-			player.playerType = cMage
+			player.playerType = cMage;
 			player.PlayerHP = 5;
 			player.PlayerArmor = 10;
 			player.PlayerHitChance = (rand() % 10) + 1;
