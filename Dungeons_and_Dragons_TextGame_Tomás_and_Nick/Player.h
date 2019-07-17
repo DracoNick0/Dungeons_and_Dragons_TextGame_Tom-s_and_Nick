@@ -12,3 +12,15 @@ class PlayerManager
 		tempplayer GetPlayer();
 		void SetPlayer(tempplayer newPlayer);
 };
+
+class EnemyManager
+{
+	private:
+		tempenemy* enemy;
+		EnemyManager();
+	public:
+		~EnemyManager();
+		static EnemyManager GetEnemyManager();
+		tempenemy GetEnemy();
+		void SetEnemy(tempenemy newEnemy);
+};

@@ -13,7 +13,7 @@ enum PlayerType
 	cMage
 };
 
-enum EnemType
+enum EnemyType
 {
 	cEasy,
 	cMedium,
@@ -23,13 +23,13 @@ enum EnemType
 
 struct tempplayer
 {
+	int PlayerHP         = 0;
 	int PlayerArmor      = 0;
 	int PlayerHitChance  = 0;
 	int PlayerHitDamage  = 0;
 	int PlayerCritChance = 0;
 	int PlayerCritDamage = 0;
 	int PlayerDodge      = 0;
-	int PlayerHP         = 0;
 	bool Playerisdead = false;
 	PlayerType playerType;
 };
@@ -44,4 +44,5 @@ struct tempenemy
 	int EnemyCritDamage  = 0;
 	int EnemyDodge       = 0;
 	bool Enemyisdead = false;
+	EnemyType enemyType;
 };

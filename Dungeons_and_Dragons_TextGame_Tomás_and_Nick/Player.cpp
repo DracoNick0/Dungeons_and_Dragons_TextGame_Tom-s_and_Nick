@@ -39,3 +39,45 @@ void PlayerManager::SetPlayer(tempplayer newPlayer)
 		player->playerType = newPlayer.playerType;
 	}
 }
+
+//Enemy
+
+EnemyManager::EnemyManager()
+{
+	enemy = new tempenemy;
+}
+
+EnemyManager::~EnemyManager()
+{
+	if (enemy != nullptr)
+	{
+		//delete enemy;
+	}
+}
+
+EnemyManager EnemyManager::GetEnemyManager()
+{
+	static EnemyManager manager;
+	return manager;
+}
+
+tempenemy EnemyManager::GetEnemy()
+{
+	return *enemy;
+}
+
+void EnemyManager::SetEnemy(tempenemy newEnemy)
+{
+	if (enemy != nullptr)
+	{
+		enemy->EnemyArmor = newEnemy.EnemyArmor;
+		enemy->EnemyCritChance = newEnemy.EnemyCritChance;
+		enemy->EnemyCritDamage = newEnemy.EnemyCritDamage;
+		enemy->EnemyDodge = newEnemy.EnemyDodge;
+		enemy->EnemyHitChance = newEnemy.EnemyHitChance;
+		enemy->EnemyHitDamage = newEnemy.EnemyHitDamage;
+		enemy->EnemyHP = newEnemy.EnemyHP;
+		enemy->Enemyisdead = newEnemy.EnemyHP;
+		enemy->enemyType = newEnemy.enemyType;
+	}
+}
