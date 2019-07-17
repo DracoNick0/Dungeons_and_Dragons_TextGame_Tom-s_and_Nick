@@ -14,12 +14,9 @@ void AttackSystem()
 {
 	tempplayer Player = PlayerManager::GetPlayerManager().GetPlayer();
 	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
+	cout << "The enemy is ready to fight, what do you do?" << endl << endl;
 	while (Player.PlayerHP > 0 || Enemy.EnemyHP > 0)
 	{
-
-		cout << "READY!" << endl;
-		cout << "BEGIN!" << endl << endl;
-		cout << "The enemy is ready to fight, what do you do?" << endl << endl;
 		cout << "1. Attack" << endl;
 		cout << "2. Special Attack" << endl;
 
@@ -46,7 +43,7 @@ void AttackSystem()
 			}
 			else
 			{
-				cout << "You missed." << endl;
+				cout << "You miss your attack, the enemy scoffs at your puny arm swing and attacks back with full power!" << endl;
 			}
 
 		}
