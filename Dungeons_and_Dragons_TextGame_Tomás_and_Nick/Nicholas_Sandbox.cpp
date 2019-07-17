@@ -3,6 +3,7 @@
 #include <time.h>
 #include "Tomas_Sandbox.h"
 #include "Nicholas_Sandbox.h"
+#include "Player.h"
 
 
 using namespace std;
@@ -24,8 +25,11 @@ void AttackSystem()
 	if (choice == 1)
 	{
 		cout << "You chose to Attack." << endl;
-		hitchance = (rand() % 100);
+		int hitchance = (rand() % 100);
 		if (hitchance)
+		{
+
+		}
 
 	}
 	else if (choice == 2)

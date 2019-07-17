@@ -1,9 +1,9 @@
-#include <iostream>
-#include <stdlib.h>
-#include <time.h>
-#include "Tomas_Sandbox.h"
-#include "Nicholas_Sandbox.h"
-using namespace std;
+#include "Player.h"
+
+PlayerManager::PlayerManager()
+{
+
+}
 
 PlayerManager PlayerManager::GetPlayerManager()
 {
@@ -19,9 +19,4 @@ tempplayer PlayerManager::GetPlayer()
 void PlayerManager::SetPlayer(tempplayer newPlayer)
 {
 	player = newPlayer;
-}
-
-void characterselection()
-{
-	while (characterchoice == 0)
 }
