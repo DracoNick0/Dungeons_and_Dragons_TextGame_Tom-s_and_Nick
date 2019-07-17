@@ -28,7 +28,7 @@ void CharacterChoice()
 	
 	cout << "Fine, I shall grant you the name, " << name << "." << endl;
 	cout << "I will give you a decision, a choice! What will you be? A warrior? An asssassin? A tank? Or a Mage?" << endl;
-	cout << "1. Warrior" << endl;
+	cout << "1. Knight" << endl;
 	cout << "2. Assassin" << endl;
 	cout << "3. Tank" << endl;
 	cout << "4. Mage" << endl;
@@ -39,16 +39,16 @@ void CharacterChoice()
 		cin >> character;
 		if (character == 1)
 		{
-			cout << "Exellent choice! You have chosen to become a warrior. I shall grant you with a variety of skills, a starter sword and a set of armor and your desposal!" << endl;
+			cout << "Exellent choice! You have chosen to become a knight. I shall grant you with a variety of skills, a starter sword and a set of armor and your desposal!" << endl;
 			temp = 1;
 			Player.playerType = cKnight;
 			Player.PlayerHP = 10;
 			Player.PlayerArmor = 10;
-			Player.PlayerHitChance = 100;
-			Player.PlayerHitDamage = 100;
-			Player.PlayerCritChance = 100;
-			Player.PlayerCritDamage = 100;
-			Player.PlayerDodge;
+			Player.PlayerHitChance = 90;
+			Player.PlayerHitDamage = 6;
+			Player.PlayerCritChance = 20;
+			Player.PlayerCritDamage = 9;
+			Player.PlayerDodge = 15;
 			Player.Playerisdead = false;
 		}
 		else if (character == 2)
@@ -56,13 +56,13 @@ void CharacterChoice()
 			cout << "Exellent choice! You have chosen to become an assassin. I shall grant you with a steathy body, sneaky hands and a starter pair of daggers at your desposal!" << endl;
 			temp = 1;
 			Player.playerType = cAssassin;
-			Player.PlayerHP = 5;
-			Player.PlayerArmor = 0;
-			Player.PlayerHitChance;
-			Player.PlayerHitDamage;
-			Player.PlayerCritChance;
-			Player.PlayerCritDamage;
-			Player.PlayerDodge;
+			Player.PlayerHP = 10;
+			Player.PlayerArmor = 5;
+			Player.PlayerHitChance = 98;
+			Player.PlayerHitDamage = 4;
+			Player.PlayerCritChance = 25;
+			Player.PlayerCritDamage = 8;
+			Player.PlayerDodge = 38;
 			Player.Playerisdead = false;
 		}
 		else if (character == 3)
@@ -72,11 +72,11 @@ void CharacterChoice()
 			Player.playerType = cTank;
 			Player.PlayerHP = 20;
 			Player.PlayerArmor = 20;
-			Player.PlayerHitChance;
-			Player.PlayerHitDamage;
-			Player.PlayerCritChance;
-			Player.PlayerCritDamage;
-			Player.PlayerDodge;
+			Player.PlayerHitChance = 60;
+			Player.PlayerHitDamage = 8;
+			Player.PlayerCritChance = 15;
+			Player.PlayerCritDamage = 16;
+			Player.PlayerDodge = 2;
 			Player.Playerisdead = false;
 		}
 		else if (character == 4)
@@ -84,13 +84,13 @@ void CharacterChoice()
 			cout << "Fine, you have chosen to become a mage so I shall grant you the skill to converse with spirits, the power to enchant your voice with elements and the knowlage of ancient runes!" << endl;
 			temp = 1;
 			Player.playerType = cMage;
-			Player.PlayerHP = 5;
+			Player.PlayerHP = 10;
 			Player.PlayerArmor = 10;
-			Player.PlayerHitChance;
-			Player.PlayerHitDamage;
-			Player.PlayerCritChance;
-			Player.PlayerCritDamage;
-			Player.PlayerDodge;
+			Player.PlayerHitChance = 80;
+			Player.PlayerHitDamage = 5;
+			Player.PlayerCritChance = 35;
+			Player.PlayerCritDamage = 15;
+			Player.PlayerDodge = 12;
 			Player.Playerisdead = false;
 		}
 		else

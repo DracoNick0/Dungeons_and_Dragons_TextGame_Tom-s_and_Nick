@@ -45,6 +45,7 @@ void Story2(string name)
 		cout << "Sorry friend you made the worng choice this is all the money I bet on you losing." << endl << endl;
 		cout << "-The Grandmaster grabs you by the neck-" << endl;
 		cout << "It was nice knowing you " << name << endl << endl;
+		cout << "YEET!" << endl;
 		cout << "-The Grandmaster throws you out the window-" << endl;
 		cout << "-You fall to your death-" << endl;
 		cout << "GAME OVER" << endl;
@@ -53,8 +54,10 @@ void Story2(string name)
 	else if (choice1 == 1)
 	{
 		cout << "Ok you have made your descision, good luck I will watch you from the stands." << endl << endl;
-		cout << "-You walk out of the room-" << endl << endl;
+		cout << "-The guards walk you out of the room-" << endl;
 	}
-	cout << "-- " << endl;
+	cout << "-You walk back to your chambers-" << endl;
+	cout << "-Tonick welcomes you back and tells you to geta full night of rest for your next fight-" << endl;
+	cout << "-You wake up ready to fight-" << endl;
 	
 }
