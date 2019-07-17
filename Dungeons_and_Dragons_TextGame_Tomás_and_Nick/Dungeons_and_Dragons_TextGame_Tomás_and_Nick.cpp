@@ -110,6 +110,6 @@ int main()
 	srand(time(NULL));
 	CharacterChoice();
 	Story1(name);
-	//AttackSystem();
+	AttackSystem();
 	
 }
