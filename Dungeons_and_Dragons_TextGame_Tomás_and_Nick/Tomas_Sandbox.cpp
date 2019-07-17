@@ -55,6 +55,6 @@ void Story2(string name)
 		cout << "Ok you have made your descision, good luck I will watch you from the stands." << endl << endl;
 		cout << "-You walk out of the room-" << endl << endl;
 	}
-	cout << "-- "
+	cout << "-- " << endl;
 	
 }

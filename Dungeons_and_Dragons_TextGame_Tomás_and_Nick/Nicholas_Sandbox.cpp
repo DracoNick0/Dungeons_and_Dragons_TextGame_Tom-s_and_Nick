@@ -12,16 +12,14 @@ using namespace std;
 
 void AttackSystem()
 {
+	while
 	tempplayer Player = PlayerManager::GetPlayerManager().GetPlayer();
 
 	cout << "READY!" << endl;
 	cout << "BEGIN!" << endl << endl;
-	cout << Player.PlayerHitChance << Player.PlayerHitDamage << Player.PlayerCritChance << Player.PlayerCritDamage << endl;
 	cout << "The enemy is ready to fight, what do you do?" << endl << endl;
 	cout << "1. Attack" << endl;
 	cout << "2. Special Attack" << endl;
-	cout << "3. Run" << endl;
-	cout << "4. Surrender" << endl;
 
 	float choice;
 	cin >> choice;
@@ -54,18 +52,8 @@ void AttackSystem()
 	{
 		cout << "You chose to use a Special Attack";
 		
-		
-	
+	}
 
-	}
-	else if (choice == 3)
-	{
-		
-	}
-	else if (choice == 4)
-	{
-
-	}
 	else
 	{
 		cout << "This is not a choice, please pick again." << endl;
