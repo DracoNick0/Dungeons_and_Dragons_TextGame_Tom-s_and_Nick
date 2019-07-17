@@ -54,12 +54,14 @@ void CharacterChoice()
 			cout << "Fine, you have chosen to become a mage so I shall grant you the skill to converse with spirits, the power to enchant your voice with elements and the knowlage of ancient runes!" << endl;
 			player = 4;
 			temp = 1;
+			
 		}
 		else
 		{
 			cout << "Please pick again, this is not a choice." << endl;
 			temp = 0;
 		}
+
 		cout << "Now go to sleep my child the contest will begin soon." << endl << endl << endl;
 	}
 }
