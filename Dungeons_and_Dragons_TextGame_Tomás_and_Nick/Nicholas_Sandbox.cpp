@@ -24,7 +24,9 @@ void AttackSystem()
 	if (choice == 1)
 	{
 		cout << "You chose to Attack." << endl;
-		Tester.PlayerHitChance;
+		hitchance = (rand() % 100);
+		if (hitchance)
+
 	}
 	else if (choice == 2)
 	{

@@ -20,3 +20,8 @@ void PlayerManager::SetPlayer(tempplayer newPlayer)
 {
 	player = newPlayer;
 }
+
+void characterselection()
+{
+	while (characterchoice == 0)
+}
