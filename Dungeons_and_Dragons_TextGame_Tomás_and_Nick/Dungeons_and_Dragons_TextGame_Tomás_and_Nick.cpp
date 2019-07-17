@@ -88,7 +88,7 @@ void CharacterChoice()
 			Player.PlayerHitDamage;
 			Player.PlayerCritChance;
 			Player.PlayerCritDamage;
-			Player.PlayerDodge = 0;
+			Player.PlayerDodge;
 			Player.Playerisdead = false;
 		}
 		else
@@ -99,7 +99,7 @@ void CharacterChoice()
 
 		PlayerManager::GetPlayerManager().SetPlayer(Player);
 
-		cout << "Now go to sleep my child the contest will begin soon." << endl << endl << endl;
+		cout << "Now go to sleep my child the contest will begin soon." << endl << endl;
 	}
 }
 
@@ -108,6 +108,7 @@ int main()
 	srand(time(NULL));
 	CharacterChoice();
 	Story1(name);
-	AttackSystem();
+	Story2(name);
+	//AttackSystem();
 	
 }
