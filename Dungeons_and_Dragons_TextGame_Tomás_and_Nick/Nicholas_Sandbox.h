@@ -8,15 +8,27 @@ enum PlayerType
 	cMage
 };
 
+struct tempplayer
+{
+	int PlayerArmor =      0;
+	int PlayerHitChance =  0;
+	int PlayerHitDamage =  0;
+	int PlayerCritChance = 0;
+	int PlayerCritDamage = 0;
+	int PlayerDodge =      0;
+	int PlayerHP =         0;
+	bool Playerisdead = false;
+	PlayerType playerType;
+};
+
 struct tempenemy
 {
-	float EnemyHP = 10;
-	float EnemyArmor = 10;
-	float EnemyHitChance = (rand() % 1) + 1;
-	float EnemyHitDamage = (rand() % 1) + 1;
-	float EnemyCritChance = (rand() % 1) + 1;
-	float EnemyCritDamage = (rand() % 1) + 1;
-	float EnemyDodge = (rand() % 1) + 1;
-	float Enemyisdead = false;
+	int EnemyHP         = 0;
+	int EnemyArmor      = 0;
+	int EnemyHitChance  = 0;
+	int EnemyHitDamage  = 0;
+	int EnemyCritChance = 0;
+	int EnemyCritDamage = 0;
+	int EnemyDodge      = 0;
+	bool Enemyisdead = false;
 };
-void AttackSystem();

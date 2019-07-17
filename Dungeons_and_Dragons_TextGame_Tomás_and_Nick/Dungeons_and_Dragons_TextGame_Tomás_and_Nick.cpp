@@ -1,9 +1,9 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 #include "Tomas_Sandbox.h"
 #include "Nicholas_Sandbox.h"
-#include <stdio.h>
 #include "Player.h"
 using namespace std;
 
@@ -13,9 +13,7 @@ string name;
 
 void CharacterChoice()
 {
-	tempplayer = PlayerManager::GetPlayerManager;
-
-
+	tempplayer Player = PlayerManager::GetPlayerManager().GetPlayer();
 
 
 	cout << "Welcome my child, I shall grant you a name. What will your name be." << endl;
@@ -40,62 +38,58 @@ void CharacterChoice()
 		if (character == 1)
 		{
 			cout << "Exellent choice! You have chosen to become a warrior. I shall grant you with a variety of skills, a starter sword and a set of armor and your desposal!" << endl;
-			characterchoice = 1;
 			temp = 1;
-			player.playerType = cKnight;
-			player.PlayerHP = 10;
-			player.PlayerArmor = 10;
-			player.PlayerHitChance = (rand() % 10) + 1;
-			player.PlayerHitDamage = (rand() % 5) + 1;
-			player.PlayerCritChance = (rand() % 20) + 1;
-			player.PlayerCritDamage = (rand() % 5) + 1;
-			player.PlayerDodge;
-			player.Playerisdead = false;
+			Player.playerType = cKnight;
+			Player.PlayerHP = 10;
+			Player.PlayerArmor = 10;
+			Player.PlayerHitChance = (rand() % 10) + 1;
+			Player.PlayerHitDamage = (rand() % 5) + 1;
+			Player.PlayerCritChance = (rand() % 20) + 1;
+			Player.PlayerCritDamage = (rand() % 5) + 1;
+			Player.PlayerDodge;
+			Player.Playerisdead = false;
 		}
 		else if (character == 2)
 		{
 			cout << "Exellent choice! You have chosen to become an assassin. I shall grant you with a steathy body, sneaky hands and a starter pair of daggers at your desposal!" << endl;
-			characterchoice = 2;
 			temp = 1;
-			player.playerType = cAssassin;
-			player.PlayerHP = 5;
-			player.PlayerArmor = 0;
-			player.PlayerHitChance = (rand() % 5) + 1;
-			player.PlayerHitDamage = (rand() % 3) + 1;
-			player.PlayerCritChance = (rand() % 20) + 1;
-			player.PlayerCritDamage = (rand() % 5) + 1;
-			player.PlayerDodge;
-			player.Playerisdead = false;
+			Player.playerType = cAssassin;
+			Player.PlayerHP = 5;
+			Player.PlayerArmor = 0;
+			Player.PlayerHitChance = (rand() % 5) + 1;
+			Player.PlayerHitDamage = (rand() % 3) + 1;
+			Player.PlayerCritChance = (rand() % 20) + 1;
+			Player.PlayerCritDamage = (rand() % 5) + 1;
+			Player.PlayerDodge;
+			Player.Playerisdead = false;
 		}
 		else if (character == 3)
 		{
 			cout << "Exellent choice! You have chosen to become a tank. I shall grant you with a sturdy body, knowlage of support skills and a heavy starter shield at your desposal!" << endl;
-			characterchoice = 3;
 			temp = 1;
-			player.playerType = cTank;
-			player.PlayerHP = 20;
-			player.PlayerArmor = 20;
-			player.PlayerHitChance = (rand() % 20) + 1;
-			player.PlayerHitDamage = (rand() % 25) + 1;
-			player.PlayerCritChance = (rand() % 30) + 1;
-			player.PlayerCritDamage = (rand() % 10) + 1;
-			player.PlayerDodge;
-			player.Playerisdead = false;
+			Player.playerType = cTank;
+			Player.PlayerHP = 20;
+			Player.PlayerArmor = 20;
+			Player.PlayerHitChance = (rand() % 20) + 1;
+			Player.PlayerHitDamage = (rand() % 25) + 1;
+			Player.PlayerCritChance = (rand() % 30) + 1;
+			Player.PlayerCritDamage = (rand() % 10) + 1;
+			Player.PlayerDodge;
+			Player.Playerisdead = false;
 		}
 		else if (character == 4)
 		{
 			cout << "Fine, you have chosen to become a mage so I shall grant you the skill to converse with spirits, the power to enchant your voice with elements and the knowlage of ancient runes!" << endl;
-			characterchoice = 4;
 			temp = 1;
-			player.playerType = cMage;
-			player.PlayerHP = 5;
-			player.PlayerArmor = 10;
-			player.PlayerHitChance = (rand() % 10) + 1;
-			player.PlayerHitDamage;
-			player.PlayerCritChance;
-			player.PlayerCritDamage;
-			player.PlayerDodge = 0;
-			player.Playerisdead = false;
+			Player.playerType = cMage;
+			Player.PlayerHP = 5;
+			Player.PlayerArmor = 10;
+			Player.PlayerHitChance = (rand() % 10) + 1;
+			Player.PlayerHitDamage;
+			Player.PlayerCritChance;
+			Player.PlayerCritDamage;
+			Player.PlayerDodge = 0;
+			Player.Playerisdead = false;
 		}
 		else
 		{
@@ -103,18 +97,17 @@ void CharacterChoice()
 			temp = 0;
 		}
 
-		PlayerManager::GetPlayerManager().SetPlayer(player);
+		PlayerManager::GetPlayerManager().SetPlayer(Player);
 
 		cout << "Now go to sleep my child the contest will begin soon." << endl << endl << endl;
 	}
 }
-characterchoice;
 
 int main()
 {
 	srand(time(NULL));
 	CharacterChoice();
 	Story1(name);
-	AttackSystem();
+	//AttackSystem();
 	
 }
