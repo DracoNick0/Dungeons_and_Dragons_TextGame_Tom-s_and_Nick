@@ -31,6 +31,8 @@ struct tempplayer
 	int PlayerCritDamage = 0;
 	int PlayerDodge      = 0;
 	bool Playerisdead = false;
+	int PlayerAddHitDamage = 0;
+	int PlayerAddCritDamage = 0;
 	PlayerType playerType;
 };
 

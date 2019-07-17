@@ -37,6 +37,8 @@ void PlayerManager::SetPlayer(tempplayer newPlayer)
 		player->PlayerHP = newPlayer.PlayerHP;
 		player->Playerisdead = newPlayer.PlayerHP;
 		player->playerType = newPlayer.playerType;
+		player->PlayerAddHitDamage = newPlayer.PlayerAddHitDamage;
+		player->PlayerAddCritDamage = newPlayer.PlayerAddCritDamage;
 	}
 }
 
