@@ -4,9 +4,10 @@
 class PlayerManager
 {
 	private:
-		tempplayer player;
+		tempplayer* player;
 		PlayerManager();
 	public:
+		~PlayerManager();
 		static PlayerManager GetPlayerManager();
 		tempplayer GetPlayer();
 		void SetPlayer(tempplayer newPlayer);

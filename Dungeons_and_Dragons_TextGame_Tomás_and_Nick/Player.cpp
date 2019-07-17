@@ -2,7 +2,15 @@
 
 PlayerManager::PlayerManager()
 {
+	player = new tempplayer;
+}
 
+PlayerManager::~PlayerManager()
+{
+	if (player != nullptr)
+	{
+		//delete player;
+	}
 }
 
 PlayerManager PlayerManager::GetPlayerManager()
@@ -13,10 +21,21 @@ PlayerManager PlayerManager::GetPlayerManager()
 
 tempplayer PlayerManager::GetPlayer()
 {
-	return player;
+	return *player;
 }
 
 void PlayerManager::SetPlayer(tempplayer newPlayer)
 {
-	player = newPlayer;
+	if (player != nullptr)
+	{
+		player->PlayerArmor = newPlayer.PlayerArmor;
+		player->PlayerCritChance = newPlayer.PlayerCritChance;
+		player->PlayerCritDamage = newPlayer.PlayerCritDamage;
+		player->PlayerDodge = newPlayer.PlayerDodge;
+		player->PlayerHitChance = newPlayer.PlayerHitChance;
+		player->PlayerHitDamage = newPlayer.PlayerHitDamage;
+		player->PlayerHP = newPlayer.PlayerHP;
+		player->Playerisdead = newPlayer.PlayerHP;
+		player->playerType = newPlayer.playerType;
+	}
 }
