@@ -15,8 +15,14 @@ void AttackSystem()
 	tempplayer Player = PlayerManager::GetPlayerManager().GetPlayer();
 	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
 	cout << "The enemy is ready to fight, what do you do?" << endl << endl;
+	int i = 0;
+	int skillcharge = 0;
 	while (Player.PlayerHP > 0 || Enemy.EnemyHP > 0)
 	{
+		if (i > 0)
+		{
+			cout << "The enemy stands unguarded, what do you do?" << endl;
+		}
 		cout << "1. Attack" << endl;
 		cout << "2. Special Attack" << endl;
 
@@ -24,6 +30,7 @@ void AttackSystem()
 		cin >> choice;
 		if (choice == 1)
 		{
+			skillcharge++;
 			cout << "You chose to Attack." << endl;
 			int hitchance = (rand() % 100) + 1;
 			if (hitchance > 0 && hitchance < Player.PlayerHitChance)
@@ -35,27 +42,30 @@ void AttackSystem()
 					int critdamage = (rand() % Player.PlayerCritDamage) + 1;
 					cout << "Crit! " << critdamage << "!" << endl;
 					cout << "You dealt " << hitdamage + critdamage << " damage to the enemy." << endl;
+					cout << "The enemy takes a step back in pain then attacks back." << endl;
 				}
 				else
 				{
 					cout << "You dealt " << hitdamage << " damage to the enemy." << endl;
+					cout << "The enemy flinches at your attack and attacks back." << endl;
 				}
 			}
 			else
 			{
-				cout << "You miss your attack, the enemy scoffs at your puny arm swing and attacks back with full power!" << endl;
+				cout << "You miss your attack, the enemy scoffs at your puny arm swing and attacks back!" << endl;
 			}
-
 		}
-		else if (choice == 2)
+		if (choice == 2)
 		{
-			cout << "You chose to use a Special Attack";
-
+			if(skillcharge == 2)
+			{
+				skillcharge = 0;
+				cout << "You chose to use a Special Attack";
+			}
 		}
-
 		else
 		{
-			cout << "This is not a choice, please pick again." << endl;
+			cout << "This is not a choice please pick again." << endl;
 		}
 	}
 }
