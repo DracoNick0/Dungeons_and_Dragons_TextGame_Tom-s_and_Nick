@@ -44,10 +44,10 @@ void CharacterChoice()
 			Player.playerType = cKnight;
 			Player.PlayerHP = 10;
 			Player.PlayerArmor = 10;
-			Player.PlayerHitChance = (rand() % 10) + 1;
-			Player.PlayerHitDamage = (rand() % 5) + 1;
-			Player.PlayerCritChance = (rand() % 20) + 1;
-			Player.PlayerCritDamage = (rand() % 5) + 1;
+			Player.PlayerHitChance = 100;
+			Player.PlayerHitDamage = 100;
+			Player.PlayerCritChance = 100;
+			Player.PlayerCritDamage = 100;
 			Player.PlayerDodge;
 			Player.Playerisdead = false;
 		}
@@ -58,10 +58,10 @@ void CharacterChoice()
 			Player.playerType = cAssassin;
 			Player.PlayerHP = 5;
 			Player.PlayerArmor = 0;
-			Player.PlayerHitChance = (rand() % 5) + 1;
-			Player.PlayerHitDamage = (rand() % 3) + 1;
-			Player.PlayerCritChance = (rand() % 20) + 1;
-			Player.PlayerCritDamage = (rand() % 5) + 1;
+			Player.PlayerHitChance;
+			Player.PlayerHitDamage;
+			Player.PlayerCritChance;
+			Player.PlayerCritDamage;
 			Player.PlayerDodge;
 			Player.Playerisdead = false;
 		}
@@ -72,10 +72,10 @@ void CharacterChoice()
 			Player.playerType = cTank;
 			Player.PlayerHP = 20;
 			Player.PlayerArmor = 20;
-			Player.PlayerHitChance = (rand() % 20) + 1;
-			Player.PlayerHitDamage = (rand() % 25) + 1;
-			Player.PlayerCritChance = (rand() % 30) + 1;
-			Player.PlayerCritDamage = (rand() % 10) + 1;
+			Player.PlayerHitChance;
+			Player.PlayerHitDamage;
+			Player.PlayerCritChance;
+			Player.PlayerCritDamage;
 			Player.PlayerDodge;
 			Player.Playerisdead = false;
 		}
@@ -86,7 +86,7 @@ void CharacterChoice()
 			Player.playerType = cMage;
 			Player.PlayerHP = 5;
 			Player.PlayerArmor = 10;
-			Player.PlayerHitChance = (rand() % 10) + 1;
+			Player.PlayerHitChance;
 			Player.PlayerHitDamage;
 			Player.PlayerCritChance;
 			Player.PlayerCritDamage;
