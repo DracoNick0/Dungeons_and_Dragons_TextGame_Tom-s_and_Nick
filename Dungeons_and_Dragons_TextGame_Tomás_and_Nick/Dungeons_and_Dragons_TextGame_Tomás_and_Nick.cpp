@@ -26,7 +26,7 @@ void CharacterChoice()
 		exit(0);
 	}
 	
-	cout << "Fine, I shall grant you the name, " << name << "." << endl;
+	cout << endl << "Fine, I shall grant you the name, " << name << "." << endl;
 	cout << "I will give you a decision, a choice! What will you be? A warrior? An asssassin? A tank? Or a Mage?" << endl;
 	cout << "1. Knight" << endl;
 	cout << "2. Assassin" << endl;
