@@ -137,7 +137,7 @@ void Story4(string name)
 	cin >> choice3;
 	if (choice3 == "yes" || choice3 == "Yes")
 	{
-		cout << "Hah that was a joke that you fell for, the producers of this game didn't have enough time to code more, GOOD DAY!" << endl;
+		cout << "Hah! Just kidding, the producers of this game didn't have enough time to code more content, SEE YA!" << endl;
 		cout << "GAME OVER!" << endl;
 		exit(0);
 		

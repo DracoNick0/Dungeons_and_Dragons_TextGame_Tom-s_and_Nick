@@ -167,12 +167,12 @@ int main()
 	srand(time(NULL));
 	CharacterChoice();
 	Story1(name);
-	//AttackSystem();
+	AttackSystem();
 	Story2(name);
-	//AttackSystem();
+	AttackSystem();
 	Story3(name);
-	//AttackSystem();
+	AttackSystem();
 	Story4(name);
 	
-	
+	return 0;
 }
