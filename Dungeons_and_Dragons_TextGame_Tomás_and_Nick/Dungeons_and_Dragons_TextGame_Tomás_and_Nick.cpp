@@ -56,9 +56,9 @@ void CharacterChoice()
 			Player.PlayerSkill1 = "Penetrating_Slash";
 			Player.PlayerSkill2 = "Iron_Slam";
 			Player.PlayerSkill3 = "Running_Strike";//stun
-			Player.PlayerSkill1Damage = 12;
-			Player.PlayerSkill2Damage = 15;
-			Player.PlayerSkill3Damage = 10;
+			Player.PlayerSkill1Damage = 24;
+			Player.PlayerSkill2Damage = 28;
+			Player.PlayerSkill3Damage = 35;
 		}
 		else if (character == 2)
 		{
@@ -72,17 +72,17 @@ void CharacterChoice()
 			Player.PlayerHitChance = 98;
 			Player.PlayerHitDamage = 8;
 			Player.PlayerCritChance = 25;
-			Player.PlayerCritDamage = 8;
-			Player.PlayerAddCritDamage = 4;
+			Player.PlayerCritDamage = 15;
+			Player.PlayerAddCritDamage = 10;
 			Player.PlayerAddHitDamage = 8;
 			Player.PlayerDodge = 45;
 			Player.PlayerSkill1 = "Napkin_Shank";
 			Player.PlayerSkill2 = "Shadow_Leap";
 			Player.PlayerSkill3 = "Smoke_Bomb"; //stun
 			
-			Player.PlayerSkill1Damage = 14;
-			Player.PlayerSkill2Damage = 9;
-			Player.PlayerSkill3Damage = 5;
+			Player.PlayerSkill1Damage = 17;
+			Player.PlayerSkill2Damage = 22;
+			Player.PlayerSkill3Damage = 30;
 		}
 		else if (character == 3)
 		{
@@ -103,9 +103,9 @@ void CharacterChoice()
 			Player.PlayerSkill1 = "Upper_Cut";
 			Player.PlayerSkill2 = "Belly_Slam";
 			Player.PlayerSkill3 = "Earthquake"; //stun
-			Player.PlayerSkill1Damage = 7;
-			Player.PlayerSkill2Damage = 10;
-			Player.PlayerSkill3Damage = 20;
+			Player.PlayerSkill1Damage = 18;
+			Player.PlayerSkill2Damage = 30;
+			Player.PlayerSkill3Damage = 40;
 		}
 		else if (character == 4)
 		{
@@ -126,9 +126,9 @@ void CharacterChoice()
 			Player.PlayerSkill1 = "Fire_Ball";
 			Player.PlayerSkill2 = "Nature's_Touch";
 			Player.PlayerSkill3 = "Mage's_Trance"; //stun
-			Player.PlayerSkill1Damage = 15;
-			Player.PlayerSkill2Damage = 10;
-			Player.PlayerSkill3Damage = 7;
+			Player.PlayerSkill1Damage = 10;
+			Player.PlayerSkill2Damage = 25;
+			Player.PlayerSkill3Damage = 35;
 		}
 		else if (character == 666)
 		{
