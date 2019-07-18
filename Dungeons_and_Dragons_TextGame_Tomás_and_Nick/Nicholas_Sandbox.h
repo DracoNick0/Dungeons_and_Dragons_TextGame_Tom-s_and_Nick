@@ -25,7 +25,7 @@ enum EnemyType
 
 struct tempplayer
 {
-	bool Playerisdead = false;
+	bool PlayerisDead = false;
 	int PlayerHP         = 0;
 	int PlayerArmor      = 0;
 	int PlayerHitChance  = 0;
@@ -47,12 +47,12 @@ struct tempplayer
 
 struct tempenemy
 {
-	bool Enemyisdead = false;
+	bool EnemyisDead = false;
 	int EnemyHP          = 0;
 	int EnemyArmor       = 0;
 	int EnemyHitChance   = 0;
 	int EnemyHitDamage   = 0;
-	int EnemyDamage = 0;
+	int EnemyAddHitDamage = 0;
 	int EnemyCritChance  = 0;
 	int EnemyCritDamage  = 0;
 	int EnemyAddCritDamage = 0;

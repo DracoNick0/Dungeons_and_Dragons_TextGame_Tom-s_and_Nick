@@ -41,9 +41,10 @@ void CharacterChoice()
 		{
 			cout << "Exellent choice! You have chosen to become a knight. I shall grant you with a variety of skills, a starter sword and a set of armor and your desposal!" << endl;
 			temp = 1;
+			Player.PlayerisDead = false;
 			Player.playerType = cKnight;
 			Player.PlayerHP = 25;
-			///Player.PlayerArmor = 10;
+			Player.PlayerArmor = 10;
 			Player.PlayerHitChance = 90;
 			Player.PlayerHitDamage = 10;
 			Player.PlayerCritChance = 20;
@@ -51,15 +52,21 @@ void CharacterChoice()
 			Player.PlayerAddCritDamage = 5;
 			Player.PlayerAddCritDamage = 5;
 			Player.PlayerDodge = 15;
-			Player.Playerisdead = false;
+			Player.PlayerSkill1;
+			Player.PlayerSkill2;
+			Player.PlayerSkill3;
+			Player.PlayerSkill1Damage;
+			Player.PlayerSkill2Damage;
+			Player.PlayerSkill3Damage;
 		}
 		else if (character == 2)
 		{
 			cout << "Exellent choice! You have chosen to become an assassin. I shall grant you with a steathy body, sneaky hands and a starter pair of daggers at your desposal!" << endl;
 			temp = 1;
+			Player.PlayerisDead = false;
 			Player.playerType = cAssassin;
 			Player.PlayerHP = 15;
-			//Player.PlayerArmor = 5;
+			Player.PlayerArmor = 5;
 			Player.PlayerHitChance = 98;
 			Player.PlayerHitDamage = 8;
 			Player.PlayerCritChance = 25;
@@ -67,39 +74,56 @@ void CharacterChoice()
 			Player.PlayerAddCritDamage = 4;
 			Player.PlayerAddHitDamage = 8;
 			Player.PlayerDodge = 45;
-			Player.Playerisdead = false;
+			Player.PlayerSkill1;
+			Player.PlayerSkill2;
+			Player.PlayerSkill3;
+			Player.PlayerSkill1Damage;
+			Player.PlayerSkill2Damage;
+			Player.PlayerSkill3Damage;
 		}
 		else if (character == 3)
 		{
 			cout << "Exellent choice! You have chosen to become a tank. I shall grant you with a sturdy body, knowlage of support skills and a heavy starter shield at your desposal!" << endl;
 			temp = 1;
+			Player.PlayerisDead = false;
 			Player.playerType = cTank;
 			Player.PlayerHP = 40;
-			//Player.PlayerArmor = 20;
+			Player.PlayerArmor = 20;
 			Player.PlayerHitChance = 70;
 			Player.PlayerHitDamage = 12;
+			Player.PlayerAddHitDamage = 8 ;
 			Player.PlayerCritChance = 20;
 			Player.PlayerCritDamage = 16;
 			Player.PlayerAddCritDamage = 15;
-			Player.PlayerAddHitDamage = 8 ;
 			Player.PlayerDodge = 2;
-			Player.Playerisdead = false;
+			Player.PlayerSkill1;
+			Player.PlayerSkill2;
+			Player.PlayerSkill3;
+			Player.PlayerSkill1Damage;
+			Player.PlayerSkill2Damage;
+			Player.PlayerSkill3Damage;
 		}
 		else if (character == 4)
 		{
 			cout << "Fine, you have chosen to become a mage so I shall grant you the skill to converse with spirits, the power to enchant your voice with elements and the knowlage of ancient runes!" << endl;
 			temp = 1;
+			Player.PlayerisDead = false;
 			Player.playerType = cMage;
 			Player.PlayerHP = 20;
-			//Player.PlayerArmor = 10;
+			Player.PlayerArmor = 10;
 			Player.PlayerHitChance = 80;
 			Player.PlayerHitDamage = 10;
+			Player.PlayerAddHitDamage = 4;
 			Player.PlayerCritChance = 35;
 			Player.PlayerCritDamage = 15;
-			Player.PlayerAddCritDamage = 12 ;
-			Player.PlayerAddHitDamage = 4;
+			Player.PlayerAddCritDamage = 12;
 			Player.PlayerDodge = 12;
-			Player.Playerisdead = false;
+			Player.PlayerSkill1;
+			Player.PlayerSkill2;
+			Player.PlayerSkill3;
+			Player.PlayerSkill1Damage;
+			Player.PlayerSkill2Damage;
+			Player.PlayerSkill3Damage;
 		}
 		else
 		{
