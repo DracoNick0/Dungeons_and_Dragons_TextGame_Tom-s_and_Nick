@@ -39,8 +39,8 @@ void CharacterChoice()
 		cin >> character;
 		if (character == 1)
 		{
-			cout << "Exellent choice! You have chosen to become a knight. I shall grant you with a variety of skills, a starter sword and a set of armor and your desposal!" << endl;
-			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
+			cout << endl << "Exellent choice! You have chosen to become a knight. I shall grant you with a variety of skills, a starter sword and a set of armor and your desposal!" << endl;
+			cout << "Now go to sleep my child, you shall soon awake in a bountiful world." << endl << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cKnight;
@@ -62,7 +62,7 @@ void CharacterChoice()
 		}
 		else if (character == 2)
 		{
-			cout << "Exellent choice! You have chosen to become an assassin. I shall grant you with a steathy body, sneaky hands and a starter pair of daggers at your desposal!" << endl;
+			cout << endl << "Exellent choice! You have chosen to become an assassin. I shall grant you with a steathy body, sneaky hands and a starter pair of daggers at your desposal!" << endl;
 			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
@@ -85,7 +85,7 @@ void CharacterChoice()
 		}
 		else if (character == 3)
 		{
-			cout << "Exellent choice! You have chosen to become a tank. I shall grant you with a sturdy body, knowlage of support skills and a heavy starter shield at your desposal!" << endl;
+			cout << endl << "Exellent choice! You have chosen to become a tank. I shall grant you with a sturdy body, knowlage of support skills and a heavy starter shield at your desposal!" << endl;
 			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
@@ -108,8 +108,8 @@ void CharacterChoice()
 		}
 		else if (character == 4)
 		{
-			cout << "Fine, you have chosen to become a mage so I shall grant you the skill to converse with spirits, the power to enchant your voice with elements and the knowlage of ancient runes!" << endl;
-			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
+			cout << endl << "Fine, you have chosen to become a mage so I shall grant you the skill to converse with spirits, the power to enchant your voice with elements and the knowlage of ancient runes!" << endl;
+			cout << "Now go to sleep, you will soon awake in another world." << endl << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cMage;
@@ -131,7 +131,7 @@ void CharacterChoice()
 		}
 		else if (character == 666)
 		{
-			cout << "You vile DEMON SPAWN cheat code user! I shall expell you from this bountiful universe. BEGONE THOT!" << endl;
+			cout << endl << "You vile DEMON SPAWN cheat code user! I shall expell you from this bountiful universe. BEGONE THOT!" << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cMage;
