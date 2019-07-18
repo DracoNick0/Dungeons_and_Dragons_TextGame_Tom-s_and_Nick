@@ -44,18 +44,18 @@ void CharacterChoice()
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cKnight;
-			Player.PlayerHP = 25;
+			Player.PlayerHP = 100;
 			Player.PlayerArmor = 10;
 			Player.PlayerHitChance = 90;
 			Player.PlayerHitDamage = 10;
 			Player.PlayerCritChance = 20;
 			Player.PlayerCritDamage = 20;
 			Player.PlayerAddCritDamage = 5;
-			Player.PlayerAddCritDamage = 5;
+			Player.PlayerAddHitDamage = 5;
 			Player.PlayerDodge = 15;
 			Player.PlayerSkill1 = "Penetrating_Slash";
-			Player.PlayerSkill2 = "Running_Strike";
-			Player.PlayerSkill3 = "Iron_Slam";
+			Player.PlayerSkill2 = "Iron_Slam";
+			Player.PlayerSkill3 = "Running_Strike";//stun
 			Player.PlayerSkill1Damage = 12;
 			Player.PlayerSkill2Damage = 15;
 			Player.PlayerSkill3Damage = 10;
@@ -67,7 +67,7 @@ void CharacterChoice()
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cAssassin;
-			Player.PlayerHP = 15;
+			Player.PlayerHP = 75;
 			Player.PlayerArmor = 5;
 			Player.PlayerHitChance = 98;
 			Player.PlayerHitDamage = 8;
@@ -91,7 +91,7 @@ void CharacterChoice()
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cTank;
-			Player.PlayerHP = 40;
+			Player.PlayerHP = 150;
 			Player.PlayerArmor = 20;
 			Player.PlayerHitChance = 70;
 			Player.PlayerHitDamage = 12;
@@ -114,7 +114,7 @@ void CharacterChoice()
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cMage;
-			Player.PlayerHP = 20;
+			Player.PlayerHP = 90;
 			Player.PlayerArmor = 10;
 			Player.PlayerHitChance = 80;
 			Player.PlayerHitDamage = 10;
@@ -146,8 +146,8 @@ void CharacterChoice()
 			Player.PlayerAddCritDamage = 666;
 			Player.PlayerDodge = 666;
 			Player.PlayerSkill1 = "Soul_Absorption";
-			Player.PlayerSkill2 = "Soul_Shatter";
-			Player.PlayerSkill3 = "Hell's_Wrath";
+			Player.PlayerSkill2 = "Hell's_Wrath";
+			Player.PlayerSkill3 = "Soul_Shatter";//stun
 			Player.PlayerSkill1Damage = 666;
 			Player.PlayerSkill2Damage = 666;
 			Player.PlayerSkill3Damage = 666;
@@ -169,6 +169,10 @@ int main()
 	Story1(name);
 	AttackSystem();
 	Story2(name);
+	AttackSystem();
+	Story3(name);
+	AttackSystem();
+	Story4(name);
 	
 	return 0;
 }

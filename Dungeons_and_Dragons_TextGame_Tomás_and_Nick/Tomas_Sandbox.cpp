@@ -27,15 +27,15 @@ void Story1(string name)
 	cout << "The enemy is ready to fight, what do you do?" << endl;
 	Enemy.enemyType = cEasy;
 	Enemy.EnemyisDead = false;
-	Enemy.EnemyHP = 20;
-	Enemy.EnemyArmor = 10;
+	Enemy.EnemyHP = 70;
+	Enemy.EnemyArmor = 0;
 	Enemy.EnemyHitChance = 80;
-	Enemy.EnemyHitDamage = 10;
-	Enemy.EnemyAddHitDamage = 4;
-	Enemy.EnemyCritChance = 35;
-	Enemy.EnemyCritDamage = 15;
-	Enemy.EnemyAddCritDamage = 12;
-	Enemy.EnemyDodge = 12;
+	Enemy.EnemyHitDamage = 5;
+	Enemy.EnemyAddHitDamage = 1;
+	Enemy.EnemyCritChance = 10;
+	Enemy.EnemyCritDamage = 8;
+	Enemy.EnemyAddCritDamage = 2;
+	Enemy.EnemyDodge = 10;
 	EnemyManager::GetEnemyManager().SetEnemy(Enemy);
 }
 
@@ -78,17 +78,74 @@ void Story2(string name)
 	cout << "-You walk back to your chambers-" << endl;
 	cout << "-Tonick welcomes you back and tells you to geta full night of rest for your next fight-" << endl;
 	cout << "-You wake up ready to fight-" << endl;
+	cout << "READY...BEGIN!" << endl;
 	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
 	Enemy.enemyType = cMedium;
 	Enemy.EnemyisDead = false;
-	Enemy.EnemyHP = 20;
-	Enemy.EnemyArmor = 10;
-	Enemy.EnemyHitChance = 80;
+	Enemy.EnemyHP = 100;
+	Enemy.EnemyArmor = 0;
+	Enemy.EnemyHitChance = 85;
 	Enemy.EnemyHitDamage = 10;
 	Enemy.EnemyAddHitDamage = 4;
-	Enemy.EnemyCritChance = 35;
-	Enemy.EnemyCritDamage = 15;
-	Enemy.EnemyAddCritDamage = 12;
-	Enemy.EnemyDodge = 12;
+	Enemy.EnemyCritChance = 30;
+	Enemy.EnemyCritDamage = 7;
+	Enemy.EnemyAddCritDamage = 7;
+	Enemy.EnemyDodge = 15;
 	EnemyManager::GetEnemyManager().SetEnemy(Enemy);
+}
+void Story3(string name)
+{
+	cout << "-You win the fight and Tonick comes to help you up-" << endl;
+	cout << "Wow " << name << " I didn't know you had it in you." << endl;
+	cout << "Since you won the battle you are moving onto the final!" << endl;
+	cout << "Now you must get some rest, you need all your energy for the final of the contest." << endl << endl;
+	cout << "-You go to sleep-" << endl;
+	cout << "-When you wake up the guards acompany you to the arena-" << endl;
+	cout << "-You see that you are going to fight against...-" << endl << endl;
+	cout << "-THE GRANDMASTER!-" << endl << endl;
+	cout << "-The Grandmaster walks up to you-" << endl;
+	cout << "Since you declined my money offer I thought I would show you, the almighty " << name << " some manners on how to treat your master!" << endl << endl;
+	cout << "ARE YOU READY FOR THE FINAL OF THE CONTEST OF CHAMPIONS!" << endl;
+	cout << "-The crowd cheers-" << endl;
+	cout << "READY...FIGHT!" << endl << endl;
+	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
+	Enemy.enemyType = cHard;
+	Enemy.EnemyisDead = false;
+	Enemy.EnemyHP = 200;
+	Enemy.EnemyArmor = 0;
+	Enemy.EnemyHitChance = 75;
+	Enemy.EnemyHitDamage = 10;
+	Enemy.EnemyAddHitDamage = 8;
+	Enemy.EnemyCritChance = 40;
+	Enemy.EnemyCritDamage = 10;
+	Enemy.EnemyAddCritDamage = 14;
+	Enemy.EnemyDodge = 0;
+	EnemyManager::GetEnemyManager().SetEnemy(Enemy);
+}
+void Story4(string name)
+{
+	string choice3;
+
+	cout << "-The crowd is cheering-" << endl << endl;
+	cout << "Ladies and Gentlemen please welcome our new champion!" << endl << endl;
+	cout << "-You get yourself up and wave at the crowd-" << endl;
+	cout << "-Tonick comes over with a medal and puts it over your head-" << endl << endl;
+	cout << "Good job " << name << " you earned it" << endl << endl;
+	cout << "-You leave the arena with Tonick-" << endl;
+	cout << "-But as you are about to leave the campus of the contest, Tonick stops you-" << endl << endl;
+	cout << "Before you go The Grandmaster has offered you a chance to compete in the Contest of the OG's?" << endl;
+	cout << "-If you would like to compete write yes, if you would like to leave write no-" << endl << endl;
+	cin >> choice3;
+	if (choice3 == "yes" || choice3 == "Yes")
+	{
+		cout << "Hah! Just kidding, the producers of this game didn't have enough time to code more content, SEE YA!" << endl;
+		cout << "GAME OVER!" << endl;
+		exit(0);
+		
+	}
+	else if (choice3 == "no" || choice3 == "No")
+	{
+		cout << "You go home and live a happy life!" << endl << endl;
+		cout << "YOU WIN!" << endl;
+	}
 }
