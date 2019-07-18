@@ -40,6 +40,7 @@ void CharacterChoice()
 		if (character == 1)
 		{
 			cout << "Exellent choice! You have chosen to become a knight. I shall grant you with a variety of skills, a starter sword and a set of armor and your desposal!" << endl;
+			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cKnight;
@@ -62,6 +63,7 @@ void CharacterChoice()
 		else if (character == 2)
 		{
 			cout << "Exellent choice! You have chosen to become an assassin. I shall grant you with a steathy body, sneaky hands and a starter pair of daggers at your desposal!" << endl;
+			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cAssassin;
@@ -84,6 +86,7 @@ void CharacterChoice()
 		else if (character == 3)
 		{
 			cout << "Exellent choice! You have chosen to become a tank. I shall grant you with a sturdy body, knowlage of support skills and a heavy starter shield at your desposal!" << endl;
+			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cTank;
@@ -106,6 +109,7 @@ void CharacterChoice()
 		else if (character == 4)
 		{
 			cout << "Fine, you have chosen to become a mage so I shall grant you the skill to converse with spirits, the power to enchant your voice with elements and the knowlage of ancient runes!" << endl;
+			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cMage;
@@ -125,15 +129,35 @@ void CharacterChoice()
 			Player.PlayerSkill2Damage;
 			Player.PlayerSkill3Damage;
 		}
+		else if (character == 666)
+		{
+			cout << "You vile DEMON SPAWN cheat code user! I shall expell you from this bountiful universe. BEGONE THOT!" << endl;
+			temp = 1;
+			Player.PlayerisDead = false;
+			Player.playerType = cMage;
+			Player.PlayerHP = 666;
+			Player.PlayerArmor = 666;
+			Player.PlayerHitChance = 666;
+			Player.PlayerHitDamage = 666;
+			Player.PlayerAddHitDamage = 666;
+			Player.PlayerCritChance = 666;
+			Player.PlayerCritDamage = 666;
+			Player.PlayerAddCritDamage = 666;
+			Player.PlayerDodge = 666;
+			Player.PlayerSkill1;
+			Player.PlayerSkill2;
+			Player.PlayerSkill3;
+			Player.PlayerSkill1Damage = 666;
+			Player.PlayerSkill2Damage = 666;
+			Player.PlayerSkill3Damage = 666;
+		}
 		else
 		{
-			cout << "Please pick again, this is not a choice." << endl;
+			cout << "This is not a choice, please pick again." << endl;
 			temp = 0;
 		}
 
 		PlayerManager::GetPlayerManager().SetPlayer(Player);
-
-		cout << "Now go to sleep my child the contest will begin soon." << endl << endl;
 	}
 }
 
