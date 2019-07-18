@@ -66,17 +66,17 @@ void AttackSystem()
 				if ( choice2 == Player.PlayerSkill1)
 				{
 					cout << endl << "You chose " << Player.PlayerSkill1 << endl;
-					cout << "You dealt " << Player.PlayerSkill1Damage << endl << endl;
+					cout << "You dealt " << Player.PlayerSkill1Damage << " damage" << endl << endl;
 				}
 				else if (choice2 == Player.PlayerSkill2)
 				{
 					cout << endl <<"You chose "<< Player.PlayerSkill2 << endl;
-					cout << "You dealt " << Player.PlayerSkill2Damage << endl << endl;
+					cout << "You dealt " << Player.PlayerSkill2Damage<<" damage" << endl << endl;
 				}
 				else if (choice2 == Player.PlayerSkill3)
 				{
 					cout << endl << "You chose " << Player.PlayerSkill3 << endl;
-					cout << "You dealt " << Player.PlayerSkill3Damage << endl << endl;
+					cout << "You dealt " << Player.PlayerSkill3Damage << " damage" << endl << endl;
 				}
 			}
 			else if (skillcharge < 2)
@@ -89,4 +89,13 @@ void AttackSystem()
 			cout << "This is not a choice, please pick again." << endl;
 		}
 	}
+}
+void EnemyAttackSystem()
+{
+	tempplayer Player = PlayerManager::GetPlayerManager().GetPlayer();
+	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
+	int EnemyAttackChoice = 0;
+	int EnemyHitDamage = 0;
+	int EnemyCritDamage = 0;
+
 }
