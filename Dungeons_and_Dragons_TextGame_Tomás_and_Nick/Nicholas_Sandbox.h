@@ -38,9 +38,9 @@ struct tempplayer
 	string PlayerSkill1;
 	string PlayerSkill2;
 	string PlayerSkill3;
-	int PlayerSkill1Damage;
-	int PlayerSkill2Damage;
-	int PlayerSkill3Damage;
+	int PlayerSkill1Damage = 0;
+	int PlayerSkill2Damage = 0;
+	int PlayerSkill3Damage = 0;
 
 	PlayerType playerType;
 };

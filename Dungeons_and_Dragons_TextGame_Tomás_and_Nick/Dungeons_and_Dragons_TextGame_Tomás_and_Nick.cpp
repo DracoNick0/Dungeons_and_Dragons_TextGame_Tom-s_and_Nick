@@ -53,9 +53,9 @@ void CharacterChoice()
 			Player.PlayerAddCritDamage = 5;
 			Player.PlayerAddCritDamage = 5;
 			Player.PlayerDodge = 15;
-			Player.PlayerSkill1 = "Penetrating Slash";
-			Player.PlayerSkill2 = "Running Strike";
-			Player.PlayerSkill3 = "Iron Slam";
+			Player.PlayerSkill1 = "Penetrating_Slash";
+			Player.PlayerSkill2 = "Running_Strike";
+			Player.PlayerSkill3 = "Iron_Slam";
 			Player.PlayerSkill1Damage = 12;
 			Player.PlayerSkill2Damage = 15;
 			Player.PlayerSkill3Damage = 10;
@@ -76,13 +76,13 @@ void CharacterChoice()
 			Player.PlayerAddCritDamage = 4;
 			Player.PlayerAddHitDamage = 8;
 			Player.PlayerDodge = 45;
-			Player.PlayerSkill1 = "Napkin Shank";
-			Player.PlayerSkill2 = "Shadow Leap";
-			Player.PlayerSkill3 = "Smoke Bomb"; //stun
+			Player.PlayerSkill1 = "Napkin_Shank";
+			Player.PlayerSkill2 = "Shadow_Leap";
+			Player.PlayerSkill3 = "Smoke_Bomb"; //stun
 			
 			Player.PlayerSkill1Damage = 7;
 			Player.PlayerSkill2Damage = 9;
-			Player.PlayerSkill3Damage = 0;
+			Player.PlayerSkill3Damage = 1;
 		}
 		else if (character == 3)
 		{
@@ -100,12 +100,12 @@ void CharacterChoice()
 			Player.PlayerCritDamage = 16;
 			Player.PlayerAddCritDamage = 15;
 			Player.PlayerDodge = 2;
-			Player.PlayerSkill1 = "Upper Cut";
-			Player.PlayerSkill2 = "Belly Slam";
+			Player.PlayerSkill1 = "Upper_Cut";
+			Player.PlayerSkill2 = "Belly_Slam";
 			Player.PlayerSkill3 = "Earthquake"; //stun
 			Player.PlayerSkill1Damage = 7;
 			Player.PlayerSkill2Damage = 10;
-			Player.PlayerSkill3Damage = 0;
+			Player.PlayerSkill3Damage = 1;
 		}
 		else if (character == 4)
 		{
@@ -123,12 +123,12 @@ void CharacterChoice()
 			Player.PlayerCritDamage = 15;
 			Player.PlayerAddCritDamage = 12;
 			Player.PlayerDodge = 12;
-			Player.PlayerSkill1 = "Fire Ball";
-			Player.PlayerSkill2 = "Natures Touch";
-			Player.PlayerSkill3 = "Mage's Trance"; //stun
+			Player.PlayerSkill1 = "Fire_Ball";
+			Player.PlayerSkill2 = "Nature's_Touch";
+			Player.PlayerSkill3 = "Mage's_Trance"; //stun
 			Player.PlayerSkill1Damage = 15;
 			Player.PlayerSkill2Damage = 10;
-			Player.PlayerSkill3Damage = 0;
+			Player.PlayerSkill3Damage = 1;
 		}
 		else if (character == 666)
 		{
@@ -145,9 +145,9 @@ void CharacterChoice()
 			Player.PlayerCritDamage = 666;
 			Player.PlayerAddCritDamage = 666;
 			Player.PlayerDodge = 666;
-			Player.PlayerSkill1 = "Soul Absorption";
-			Player.PlayerSkill2 = "Soul Shatter";
-			Player.PlayerSkill3 = "Hell's Wrath";
+			Player.PlayerSkill1 = "Soul_Absorption";
+			Player.PlayerSkill2 = "Soul_Shatter";
+			Player.PlayerSkill3 = "Hell's_Wrath";
 			Player.PlayerSkill1Damage = 666;
 			Player.PlayerSkill2Damage = 666;
 			Player.PlayerSkill3Damage = 666;
