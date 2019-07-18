@@ -50,7 +50,7 @@ void AttackSystem()
 					cout << "The enemy flinches at your attack and attacks back." << endl;
 				}
 			}
-			else
+			else 
 			{
 				cout << "You miss your attack, the enemy scoffs at your puny arm swing and attacks back!" << endl;
 			}
@@ -59,11 +59,13 @@ void AttackSystem()
 		{
 			if(skillcharge == 2)
 			{
+				cout << "You chose to use a Special Attack" << endl;
 				skillcharge = 0;
-				cout << "You chose to use a Special Attack";
+
+
 			}
 		}
-		else
+		else if (choice != 1 && choice != 2)
 		{
 			cout << "This is not a choice please pick again." << endl;
 		}
