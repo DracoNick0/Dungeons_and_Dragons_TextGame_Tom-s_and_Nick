@@ -68,6 +68,7 @@ void CharacterChoice()
 			Player.PlayerAddHitDamage = 8;
 			Player.PlayerDodge = 45;
 			Player.Playerisdead = false;
+			
 		}
 		else if (character == 3)
 		{
