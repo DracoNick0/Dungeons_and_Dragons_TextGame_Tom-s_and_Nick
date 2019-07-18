@@ -61,8 +61,6 @@ void AttackSystem()
 			{
 				cout << "You chose to use a Special Attack" << endl;
 				skillcharge = 0;
-
-
 			}
 		}
 		else if (choice != 1 && choice != 2)
