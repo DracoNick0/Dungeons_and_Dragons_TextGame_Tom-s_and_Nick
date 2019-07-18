@@ -170,5 +170,5 @@ int main()
 	AttackSystem();
 	Story2(name);
 	
-	
+	return 0;
 }
