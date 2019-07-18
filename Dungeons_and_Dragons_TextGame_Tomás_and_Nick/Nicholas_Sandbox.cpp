@@ -104,3 +104,12 @@ void AttackSystem()
 		}
 	}
 }
+void EnemyAttackSystem()
+{
+	tempplayer Player = PlayerManager::GetPlayerManager().GetPlayer();
+	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
+	int EnemyAttackChoice = 0;
+	int EnemyHitDamage = 0;
+	int EnemyCritDamage = 0;
+
+}
