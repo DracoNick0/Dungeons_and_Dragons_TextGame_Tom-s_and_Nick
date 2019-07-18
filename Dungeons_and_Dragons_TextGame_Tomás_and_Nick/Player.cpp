@@ -39,6 +39,7 @@ void PlayerManager::SetPlayer(tempplayer newPlayer)
 		player->PlayerCritDamage = newPlayer.PlayerCritDamage;
 		player->PlayerAddCritDamage = newPlayer.PlayerAddCritDamage;
 		player->PlayerDodge = newPlayer.PlayerDodge;
+		player->PlayerSkillCharge = newPlayer.PlayerSkillCharge;
 		player->PlayerSkill1 = newPlayer.PlayerSkill1;
 		player->PlayerSkill2 = newPlayer.PlayerSkill2;
 		player->PlayerSkill3 = newPlayer.PlayerSkill3;

@@ -24,6 +24,7 @@ void Story1(string name)
 	cout << "-Your heart beats faster and faster-" << endl;
 	cout << "-And you are ready-" << endl << endl;
 	cout << "READY... BEGIN!" << endl << endl;
+	cout << "The enemy is ready to fight, what do you do?" << endl;
 	Enemy.enemyType = cEasy;
 	Enemy.EnemyisDead = false;
 	Enemy.EnemyHP = 70;
