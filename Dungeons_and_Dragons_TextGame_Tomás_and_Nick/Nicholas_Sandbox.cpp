@@ -61,22 +61,36 @@ void AttackSystem()
 				cout << "1. " << Player.PlayerSkill1 << endl;
 				cout << "2. " << Player.PlayerSkill2 << endl;
 				cout << "3. " << Player.PlayerSkill3 << endl;
-				cin >> choice2;
-				skillcharge = 0;
-				if ( choice2 == Player.PlayerSkill1)
+				int temp = 0;
+				while (temp == 0)
 				{
-					cout << endl << "You chose " << Player.PlayerSkill1 << endl;
-					cout << "You dealt " << Player.PlayerSkill1Damage << endl << endl;
-				}
-				else if (choice2 == Player.PlayerSkill2)
-				{
-					cout << endl <<"You chose "<< Player.PlayerSkill2 << endl;
-					cout << "You dealt " << Player.PlayerSkill2Damage << endl << endl;
-				}
-				else if (choice2 == Player.PlayerSkill3)
-				{
-					cout << endl << "You chose " << Player.PlayerSkill3 << endl;
-					cout << "You dealt " << Player.PlayerSkill3Damage << endl << endl;
+					cin >> choice2;
+					if (choice2 == Player.PlayerSkill1)
+					{
+						temp = 1;
+						skillcharge -= 2;
+						cout << endl << "You chose " << Player.PlayerSkill1 << endl;
+						cout << "You dealt " << Player.PlayerSkill1Damage << endl << endl;
+					}
+					else if (choice2 == Player.PlayerSkill2)
+					{
+						temp = 1;
+						skillcharge -= 2;
+						cout << endl << "You chose " << Player.PlayerSkill2 << endl;
+						cout << "You dealt " << Player.PlayerSkill2Damage << endl << endl;
+					}
+					else if (choice2 == Player.PlayerSkill3)
+					{
+						temp = 1;
+						skillcharge -= 2;
+						cout << endl << "You chose " << Player.PlayerSkill3 << endl;
+						cout << "You dealt " << Player.PlayerSkill3Damage << endl << endl;
+					}
+					else
+					{
+						temp = 0;
+						cout << "This is not a skill, please pick again." << endl;
+					}
 				}
 			}
 			else if (skillcharge < 2)
