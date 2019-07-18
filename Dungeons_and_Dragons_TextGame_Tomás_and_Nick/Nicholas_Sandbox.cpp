@@ -6,7 +6,7 @@
 #include "Nicholas_Sandbox.h"
 #include "Player.h"
 using namespace std;
-string choice2 = "";
+string choice2;
 
 void AttackSystem()
 {
@@ -29,7 +29,7 @@ void AttackSystem()
 		if (choice == 1)
 		{
 			skillcharge++;
-			cout << "You chose to Attack." << endl;
+			cout << endl << "You chose to Attack." << endl;
 			int hitchance = (rand() % 100) + 1;
 			if (hitchance > 0 && hitchance < Player.PlayerHitChance)
 			{
@@ -57,7 +57,7 @@ void AttackSystem()
 		{
 			if(skillcharge == 2)
 			{
-				cout << "Which skill you like to use?" << endl;
+				cout << endl << "Which skill you like to use?" << endl;
 				cout << "1. " << Player.PlayerSkill1 << endl;
 				cout << "2. " << Player.PlayerSkill2 << endl;
 				cout << "3. " << Player.PlayerSkill3 << endl;
@@ -78,10 +78,6 @@ void AttackSystem()
 					cout << endl << "You chose " << Player.PlayerSkill3 << endl;
 					cout << "You dealt " << Player.PlayerSkill3Damage << endl << endl;
 				}
-				
-
-			
-
 			}
 			else if (skillcharge < 2)
 			{

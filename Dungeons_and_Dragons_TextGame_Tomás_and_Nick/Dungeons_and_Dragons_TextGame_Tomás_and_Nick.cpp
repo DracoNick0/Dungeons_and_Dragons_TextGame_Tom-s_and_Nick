@@ -132,7 +132,7 @@ void CharacterChoice()
 		}
 		else if (character == 666)
 		{
-			cout << "You vile DEMON SPAWN cheat code user! I shall expell you from this bountiful universe. BEGONE THOT!" << endl;
+			cout << endl << "You vile DEMON SPAWN cheat code user! I shall expell you from this bountiful universe. BEGONE THOT!" << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cMage;

@@ -87,5 +87,7 @@ void EnemyManager::SetEnemy(tempenemy newEnemy)
 		enemy->EnemyHP = newEnemy.EnemyHP;
 		enemy->EnemyisDead = newEnemy.EnemyisDead;
 		enemy->enemyType = newEnemy.enemyType;
+		enemy->EnemyAddHitDamage = newEnemy.EnemyAddHitDamage;
+		enemy->EnemyAddCritDamage = newEnemy.EnemyAddCritDamage;
 	}
 }
