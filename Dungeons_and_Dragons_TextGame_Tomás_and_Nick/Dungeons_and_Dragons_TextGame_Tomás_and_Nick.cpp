@@ -39,8 +39,8 @@ void CharacterChoice()
 		cin >> character;
 		if (character == 1)
 		{
-			cout << endl << "Exellent choice! You have chosen to become a knight. I shall grant you with a variety of skills, a starter sword and a set of armor and your desposal!" << endl;
-			cout << "Now go to sleep my child, you shall soon awake in a bountiful world." << endl << endl;
+			cout << "Exellent choice! You have chosen to become a knight. I shall grant you with a variety of skills, a starter sword and a set of armor and your desposal!" << endl;
+			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cKnight;
@@ -53,16 +53,16 @@ void CharacterChoice()
 			Player.PlayerAddCritDamage = 5;
 			Player.PlayerAddCritDamage = 5;
 			Player.PlayerDodge = 15;
-			Player.PlayerSkill1;
-			Player.PlayerSkill2;
-			Player.PlayerSkill3;
-			Player.PlayerSkill1Damage;
-			Player.PlayerSkill2Damage;
-			Player.PlayerSkill3Damage;
+			Player.PlayerSkill1 = "Penetrating_Slash";
+			Player.PlayerSkill2 = "Running_Strike";
+			Player.PlayerSkill3 = "Iron_Slam";
+			Player.PlayerSkill1Damage = 12;
+			Player.PlayerSkill2Damage = 15;
+			Player.PlayerSkill3Damage = 10;
 		}
 		else if (character == 2)
 		{
-			cout << endl << "Exellent choice! You have chosen to become an assassin. I shall grant you with a steathy body, sneaky hands and a starter pair of daggers at your desposal!" << endl;
+			cout << "Exellent choice! You have chosen to become an assassin. I shall grant you with a steathy body, sneaky hands and a starter pair of daggers at your desposal!" << endl;
 			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
@@ -76,16 +76,17 @@ void CharacterChoice()
 			Player.PlayerAddCritDamage = 4;
 			Player.PlayerAddHitDamage = 8;
 			Player.PlayerDodge = 45;
-			Player.PlayerSkill1;
-			Player.PlayerSkill2;
-			Player.PlayerSkill3;
-			Player.PlayerSkill1Damage;
-			Player.PlayerSkill2Damage;
-			Player.PlayerSkill3Damage;
+			Player.PlayerSkill1 = "Napkin_Shank";
+			Player.PlayerSkill2 = "Shadow_Leap";
+			Player.PlayerSkill3 = "Smoke_Bomb"; //stun
+			
+			Player.PlayerSkill1Damage = 7;
+			Player.PlayerSkill2Damage = 9;
+			Player.PlayerSkill3Damage = 1;
 		}
 		else if (character == 3)
 		{
-			cout << endl << "Exellent choice! You have chosen to become a tank. I shall grant you with a sturdy body, knowlage of support skills and a heavy starter shield at your desposal!" << endl;
+			cout << "Exellent choice! You have chosen to become a tank. I shall grant you with a sturdy body, knowlage of support skills and a heavy starter shield at your desposal!" << endl;
 			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
@@ -99,17 +100,17 @@ void CharacterChoice()
 			Player.PlayerCritDamage = 16;
 			Player.PlayerAddCritDamage = 15;
 			Player.PlayerDodge = 2;
-			Player.PlayerSkill1;
-			Player.PlayerSkill2;
-			Player.PlayerSkill3;
-			Player.PlayerSkill1Damage;
-			Player.PlayerSkill2Damage;
-			Player.PlayerSkill3Damage;
+			Player.PlayerSkill1 = "Upper_Cut";
+			Player.PlayerSkill2 = "Belly_Slam";
+			Player.PlayerSkill3 = "Earthquake"; //stun
+			Player.PlayerSkill1Damage = 7;
+			Player.PlayerSkill2Damage = 10;
+			Player.PlayerSkill3Damage = 1;
 		}
 		else if (character == 4)
 		{
-			cout << endl << "Fine, you have chosen to become a mage so I shall grant you the skill to converse with spirits, the power to enchant your voice with elements and the knowlage of ancient runes!" << endl;
-			cout << "Now go to sleep, you will soon awake in another world." << endl << endl;
+			cout << "Fine, you have chosen to become a Mage so I shall grant you the skill to converse with spirits, the power to enchant your voice with elements and the knowlage of ancient runes!" << endl;
+			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cMage;
@@ -122,12 +123,12 @@ void CharacterChoice()
 			Player.PlayerCritDamage = 15;
 			Player.PlayerAddCritDamage = 12;
 			Player.PlayerDodge = 12;
-			Player.PlayerSkill1;
-			Player.PlayerSkill2;
-			Player.PlayerSkill3;
-			Player.PlayerSkill1Damage;
-			Player.PlayerSkill2Damage;
-			Player.PlayerSkill3Damage;
+			Player.PlayerSkill1 = "Fire_Ball";
+			Player.PlayerSkill2 = "Nature's_Touch";
+			Player.PlayerSkill3 = "Mage's_Trance"; //stun
+			Player.PlayerSkill1Damage = 15;
+			Player.PlayerSkill2Damage = 10;
+			Player.PlayerSkill3Damage = 1;
 		}
 		else if (character == 666)
 		{
@@ -144,9 +145,9 @@ void CharacterChoice()
 			Player.PlayerCritDamage = 666;
 			Player.PlayerAddCritDamage = 666;
 			Player.PlayerDodge = 666;
-			Player.PlayerSkill1;
-			Player.PlayerSkill2;
-			Player.PlayerSkill3;
+			Player.PlayerSkill1 = "Soul_Absorption";
+			Player.PlayerSkill2 = "Soul_Shatter";
+			Player.PlayerSkill3 = "Hell's_Wrath";
 			Player.PlayerSkill1Damage = 666;
 			Player.PlayerSkill2Damage = 666;
 			Player.PlayerSkill3Damage = 666;

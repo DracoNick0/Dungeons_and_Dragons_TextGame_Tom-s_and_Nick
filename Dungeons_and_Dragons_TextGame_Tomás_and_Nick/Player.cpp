@@ -42,6 +42,9 @@ void PlayerManager::SetPlayer(tempplayer newPlayer)
 		player->PlayerSkill1 = newPlayer.PlayerSkill1;
 		player->PlayerSkill2 = newPlayer.PlayerSkill2;
 		player->PlayerSkill3 = newPlayer.PlayerSkill3;
+		player->PlayerSkill1Damage = newPlayer.PlayerSkill1Damage;
+		player->PlayerSkill2Damage = newPlayer.PlayerSkill2Damage;
+		player->PlayerSkill3Damage = newPlayer.PlayerSkill3Damage;
 	}
 }
 
@@ -84,5 +87,7 @@ void EnemyManager::SetEnemy(tempenemy newEnemy)
 		enemy->EnemyHP = newEnemy.EnemyHP;
 		enemy->EnemyisDead = newEnemy.EnemyisDead;
 		enemy->enemyType = newEnemy.enemyType;
+		enemy->EnemyAddHitDamage = newEnemy.EnemyAddHitDamage;
+		enemy->EnemyAddCritDamage = newEnemy.EnemyAddCritDamage;
 	}
 }
