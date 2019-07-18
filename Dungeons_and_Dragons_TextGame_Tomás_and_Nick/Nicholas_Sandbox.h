@@ -35,6 +35,7 @@ struct tempplayer
 	int PlayerCritDamage = 0;
 	int PlayerAddCritDamage = 0;
 	int PlayerDodge      = 0;
+	int PlayerSkillCharge = 0;
 	string PlayerSkill1;
 	string PlayerSkill2;
 	string PlayerSkill3;
