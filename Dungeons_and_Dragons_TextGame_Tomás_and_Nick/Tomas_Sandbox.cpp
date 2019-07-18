@@ -3,12 +3,15 @@
 #include <stdlib.h>
 #include "Tomas_Sandbox.h"
 #include <stdio.h>
+#include "Player.h"
+#include "Nicholas_Sandbox.h"
 
 using namespace std;
 
 
 void Story1(string name)
 {
+	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
 	cout << "--THE STORY BEGINS--" << endl << endl;
 	cout << "Hey, Wake up! Wake up! The contest is about to begin." << endl;
 	cout << "The Grandmaster wants all champions to be ready for the big fight." << endl;
@@ -21,6 +24,18 @@ void Story1(string name)
 	cout << "-Your heart beats faster and faster-" << endl;
 	cout << "-And you are ready-" << endl << endl;
 	cout << "READY... BEGIN!" << endl << endl;
+	Enemy.enemyType = cEasy;
+	Enemy.EnemyisDead = false;
+	Enemy.EnemyHP = 20;
+	Enemy.EnemyArmor = 10;
+	Enemy.EnemyHitChance = 80;
+	Enemy.EnemyHitDamage = 10;
+	Enemy.EnemyAddHitDamage = 4;
+	Enemy.EnemyCritChance = 35;
+	Enemy.EnemyCritDamage = 15;
+	Enemy.EnemyAddCritDamage = 12;
+	Enemy.EnemyDodge = 12;
+	EnemyManager::GetEnemyManager().SetEnemy(Enemy);
 }
 
 void Story2(string name)
@@ -62,5 +77,17 @@ void Story2(string name)
 	cout << "-You walk back to your chambers-" << endl;
 	cout << "-Tonick welcomes you back and tells you to geta full night of rest for your next fight-" << endl;
 	cout << "-You wake up ready to fight-" << endl;
-	
+	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
+	Enemy.enemyType = cMedium;
+	Enemy.EnemyisDead = false;
+	Enemy.EnemyHP = 20;
+	Enemy.EnemyArmor = 10;
+	Enemy.EnemyHitChance = 80;
+	Enemy.EnemyHitDamage = 10;
+	Enemy.EnemyAddHitDamage = 4;
+	Enemy.EnemyCritChance = 35;
+	Enemy.EnemyCritDamage = 15;
+	Enemy.EnemyAddCritDamage = 12;
+	Enemy.EnemyDodge = 12;
+	EnemyManager::GetEnemyManager().SetEnemy(Enemy);
 }
