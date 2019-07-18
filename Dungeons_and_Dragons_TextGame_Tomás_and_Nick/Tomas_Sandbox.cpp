@@ -9,17 +9,18 @@ using namespace std;
 
 void Story1(string name)
 {
-	cout << "THE STORY BEGINS" << endl << endl;
-	cout << "Hey Wake up, Wake up! The contest is about to begin." << endl;
+	cout << "--THE STORY BEGINS--" << endl << endl;
+	cout << "Hey, Wake up! Wake up! The contest is about to begin." << endl;
 	cout << "The Grandmaster wants all champions to be ready for the big fight." << endl;
-	cout << "You are the almighty " << name << " right? The Grandmaster was excited when you agreed to this." << endl;
-	cout << "Im sorry I haven't properly introduced myslef my name is Tomick your guide throughout the contest." << endl;
-	cout << "Now look your first openent is the a county champion from Greenwood." << endl;
-	cout << "-Guard shoves you into the arena-" << endl << endl << endl;
-	cout << "-The crowd is cheering-" << endl;
+	cout << "Wait... You are the almighty " << name << " right? The Grandmaster was excited when you agreed to this." << endl;
+	cout << "Oh, I'm sorry I haven't properly introduced myslef my name is Tomick your guide throughout the contest." << endl;
+	cout << "Now look your first opponent is the a county champion from Greenwood. Good Luck." << endl;
+	cout << "-Two guards grab your arms and shove you into the arena-" << endl << endl << endl;
+	cout << "-The Gate slams behind you, and you hear the boo's coming from the audience-" << endl;
+	cout << "-Another Gate slams close and you hear the cheer of the croud-" << endl;
+	cout << "-Your heart beats faster and faster-" << endl;
 	cout << "-And you are ready-" << endl << endl;
-	cout << "READY!" << endl;
-	cout << "BEGIN!" << endl;
+	cout << "READY... BEGIN!" << endl << endl;
 }
 
 void Story2(string name)

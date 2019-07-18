@@ -5,8 +5,6 @@
 #include "Tomas_Sandbox.h"
 #include "Nicholas_Sandbox.h"
 #include "Player.h"
-
-
 using namespace std;
 
 
@@ -55,19 +53,25 @@ void AttackSystem()
 				cout << "You miss your attack, the enemy scoffs at your puny arm swing and attacks back!" << endl;
 			}
 		}
-		if (choice == 2)
+		else if (choice == 2)
 		{
 			if(skillcharge == 2)
 			{
-				cout << "You chose to use a Special Attack" << endl;
+				cout << "Which skill you like to use?" << endl;
+				cout << "1. " << Player.PlayerSkill1 << endl;
+				cout << "2. " << Player.PlayerSkill2 << endl;
+				cout << "3. " << Player.PlayerSkill3 << endl;
 				skillcharge = 0;
 
-
+			}
+			else if (skillcharge < 2)
+			{
+				cout << "This is not an option, please recharge your skills first." << endl;
 			}
 		}
-		else if (choice != 1 && choice != 2)
+		else
 		{
-			cout << "This is not a choice please pick again." << endl;
+			cout << "This is not a choice, please pick again." << endl;
 		}
 	}
 }
