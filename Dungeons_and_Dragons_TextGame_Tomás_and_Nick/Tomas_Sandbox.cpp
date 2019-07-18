@@ -47,7 +47,7 @@ void Story2(string name)
 	cout << "Now you might want to get yourself cleaned up the Grandmaster wants to see you." << endl << endl;
 	cout << "-You arrive in the Grandmater's room-" << endl << endl;
 	cout << "-As you walk around you find the Grandmaster at his desk sipping on some ginger beer-" << endl << endl;
-	cout << "I've been expecting you, " << name << "Here take a seat" << endl << endl;
+	cout << "I've been expecting you, " << name << " here take a seat" << endl << endl;
 	cout << "-You sit down-" << endl << endl;
 	cout << "Here let me give you drink, sorry I dont have any no no juice, Dr.Mairio said that I shoudn't get dizzy on a weekday." << endl << endl;
 	cout << "-You sip on your drink-" << endl << endl;
@@ -76,7 +76,7 @@ void Story2(string name)
 		cout << "-The guards walk you out of the room-" << endl;
 	}
 	cout << "-You walk back to your chambers-" << endl;
-	cout << "-Tonick welcomes you back and tells you to geta full night of rest for your next fight-" << endl;
+	cout << "-Tonick welcomes you back and tells you to get a full night of rest for your next fight-" << endl;
 	cout << "-You wake up ready to fight-" << endl;
 	cout << "READY...BEGIN!" << endl;
 	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();

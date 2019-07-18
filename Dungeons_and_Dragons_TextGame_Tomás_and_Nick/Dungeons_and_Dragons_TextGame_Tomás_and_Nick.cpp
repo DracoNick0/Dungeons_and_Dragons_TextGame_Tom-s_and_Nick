@@ -80,9 +80,9 @@ void CharacterChoice()
 			Player.PlayerSkill2 = "Shadow_Leap";
 			Player.PlayerSkill3 = "Smoke_Bomb"; //stun
 			
-			Player.PlayerSkill1Damage = 7;
+			Player.PlayerSkill1Damage = 14;
 			Player.PlayerSkill2Damage = 9;
-			Player.PlayerSkill3Damage = 1;
+			Player.PlayerSkill3Damage = 5;
 		}
 		else if (character == 3)
 		{
@@ -105,7 +105,7 @@ void CharacterChoice()
 			Player.PlayerSkill3 = "Earthquake"; //stun
 			Player.PlayerSkill1Damage = 7;
 			Player.PlayerSkill2Damage = 10;
-			Player.PlayerSkill3Damage = 1;
+			Player.PlayerSkill3Damage = 20;
 		}
 		else if (character == 4)
 		{
@@ -128,11 +128,11 @@ void CharacterChoice()
 			Player.PlayerSkill3 = "Mage's_Trance"; //stun
 			Player.PlayerSkill1Damage = 15;
 			Player.PlayerSkill2Damage = 10;
-			Player.PlayerSkill3Damage = 1;
+			Player.PlayerSkill3Damage = 7;
 		}
 		else if (character == 666)
 		{
-			cout << endl << "You vile DEMON SPAWN cheat code user! I shall expell you from this bountiful universe. BEGONE THOT!" << endl;
+			cout << endl << "You vile DEMON SPAWN cheat code user! I shall expell you from this bountiful universe. BEGONE!" << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cMage;
