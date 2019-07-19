@@ -20,21 +20,51 @@ void EnemyAttackSystem()
 		int critchance = (rand() % 100) + 1;
 		if (critchance > 0 && critchance < Enemy.EnemyCritChance)
 		{
-			int critdamage = (rand() % Player.PlayerCritDamage) + 1;
+			int critdamage = (rand() % Enemy.EnemyCritDamage) + 1;
 			cout << "Crit! " << critdamage << "!" << endl;
-			cout << "You dealt " << hitdamage + critdamage << " damage to the enemy." << endl;
-			cout << "You take a step back in pain." << endl;
+			cout << "The enemy dealt " << hitdamage + critdamage << " damage to you." << endl;
+			if (Player.PlayerHP <= 0)
+			{
+				Player.PlayerHP = 0;
+				cout << "You take a step back and look into the enemies eyes, then fall over!" << endl << endl;
+				cout << "Your health has reached zero... GAME OVER" << endl;
+				Player.PlayerSkillCharge = 0;
+				Player.PlayerisDead = true;
+				exit;
+			}
+			if (Player.PlayerHP > 0)
+			{
+				cout << "You take a step back in pain." << endl;
+				cout << "You now have " << Player.PlayerHP << " HP." << endl;
+			}
 		}
 		else
 		{
-			cout << "You dealt " << hitdamage << " damage to the enemy." << endl;
+			cout << "The enemy dealt " << hitdamage << " damage to You." << endl;
 			cout << "You take the hit and stunt back." << endl;
+			if (Player.PlayerHP <= 0)
+			{
+				Player.PlayerHP = 0;
+				cout << "You take a step back and look into the enemies eyes, then fall over!" << endl << endl;
+				cout << "Your health has reached zero... GAME OVER" << endl;
+				Player.PlayerSkillCharge = 0;
+				Player.PlayerisDead = true;
+				exit;
+			}
+			if (Player.PlayerHP > 0)
+			{
+				cout << "You take a step back in pain." << endl;
+				cout << "You now have " << Player.PlayerHP << " HP." << endl;
+			}
 		}
 	}
 	else
 	{
 		cout << "The enemy missed thier attack!" << endl;
+		cout << "You still have " << Player.PlayerHP << " HP." << endl;
 	}
+	PlayerManager::GetPlayerManager().SetPlayer(Player);	
+	EnemyManager::GetEnemyManager().SetEnemy(Enemy);
 }
 
 void AttackSystem()
@@ -44,6 +74,11 @@ void AttackSystem()
 	int i = 0;
 	while (Player.PlayerHP > 0 || Enemy.EnemyHP > 0)
 	{
+		if (Player.PlayerHP <= 0)
+		{
+			exit;
+		}
+
 		if (i > 0)
 		{
 			cout << "The enemy stands unguarded, what do you do?" << endl;
@@ -87,6 +122,7 @@ void AttackSystem()
 						cout << "The enemy takes a step back in pain." << endl;
 						cout << "The enemy now has " << Enemy.EnemyHP << " HP." << endl;
 						cout << "Your skill charge is now " << Player.PlayerSkillCharge << endl << endl;
+						EnemyAttackSystem();
 					}
 				}
 				else
@@ -106,6 +142,7 @@ void AttackSystem()
 						cout << "The enemy flinches at your attack." << endl;
 						cout << "The enemy now has " << Enemy.EnemyHP << " HP." << endl;
 						cout << "Your skill charge is now " << Player.PlayerSkillCharge << endl << endl;
+						EnemyAttackSystem();
 					}
 				}
 			}
@@ -114,6 +151,7 @@ void AttackSystem()
 				cout << "You miss your attack, the enemy scoffs at your puny arm swing!" << endl;
 				cout << "The enemy still has " << Enemy.EnemyHP << " HP left." << endl;
 				cout << "Your skill charge is now " << Player.PlayerSkillCharge << endl << endl;
+				EnemyAttackSystem();
 			}
 		}
 		else if (choice == 2)
@@ -148,7 +186,7 @@ void AttackSystem()
 							cout << "The enemy takes a step back in deep pain. " << endl;
 							cout << "The enemy now has " << Enemy.EnemyHP << " HP." << endl;
 							cout << "Your skill charge is now " << Player.PlayerSkillCharge << endl << endl;
-							AttackSystem();
+							EnemyAttackSystem();
 						}
 					}
 					else if (choice2 == Player.PlayerSkill2)
@@ -171,7 +209,7 @@ void AttackSystem()
 							cout << "The enemy takes a step back in deep pain. " << endl;
 							cout << "The enemy now has " << Enemy.EnemyHP << " HP." << endl;
 							cout << "Your skill charge is now " << Player.PlayerSkillCharge << endl << endl;
-							AttackSystem();
+							EnemyAttackSystem();
 						}
 					}
 					else if (choice2 == Player.PlayerSkill3)
@@ -194,7 +232,7 @@ void AttackSystem()
 							cout << "The enemy takes a step back stunned... " << endl;
 							cout << "The enemy now has " << Enemy.EnemyHP << " HP." << endl;
 							cout << "Your skill charge is now " << Player.PlayerSkillCharge << endl << endl;
-							AttackSystem();
+							EnemyAttackSystem();
 						}
 					}
 					else
@@ -222,4 +260,6 @@ void AttackSystem()
 			cout << "This is not a choice, please pick again." << endl;
 		}
 	}
+	PlayerManager::GetPlayerManager().SetPlayer(Player);
+	EnemyManager::GetEnemyManager().SetEnemy(Enemy);
 }
