@@ -162,11 +162,15 @@ void AttackSystem()
 				cout << "1. " << Player.PlayerSkill1 << endl;
 				cout << "2. " << Player.PlayerSkill2 << endl;
 				cout << "3. " << Player.PlayerSkill3 << endl;
+				if (Player.PlayerSkillCharge > 10)
+				{
+					Player.PlayerSkillCharge = 10;
+				}
 				int temp = 0;
 				while (temp == 0)
 				{
 					cin >> choice2;
-					if (choice2 == Player.PlayerSkill1)
+					if (choice2 == Player.PlayerSkill1 && Player.PlayerSkillCharge == 2)
 					{
 						temp = 1;
 						Player.PlayerSkillCharge -= 2;
@@ -189,10 +193,10 @@ void AttackSystem()
 							EnemyAttackSystem();
 						}
 					}
-					else if (choice2 == Player.PlayerSkill2)
+					if (choice2 == Player.PlayerSkill2 && Player.PlayerSkillCharge == 3)
 					{
 						temp = 1;
-						Player.PlayerSkillCharge -= 2;
+						Player.PlayerSkillCharge -= 3;
 						cout << endl << "You chose " << Player.PlayerSkill2 << endl;
 						cout << "You dealt " << Player.PlayerSkill2Damage << endl << endl;
 						Enemy.EnemyHP -= Player.PlayerSkill2Damage;
@@ -212,10 +216,10 @@ void AttackSystem()
 							EnemyAttackSystem();
 						}
 					}
-					else if (choice2 == Player.PlayerSkill3)
+					if (choice2 == Player.PlayerSkill3 && Player.PlayerSkillCharge == 4)
 					{
 						temp = 1;
-						Player.PlayerSkillCharge -= 2;
+						Player.PlayerSkillCharge -= 4;
 						cout << endl << "You chose " << Player.PlayerSkill3 << endl;
 						cout << "You dealt " << Player.PlayerSkill3Damage << endl << endl;
 						Enemy.EnemyHP -= Player.PlayerSkill3Damage;
@@ -252,7 +256,7 @@ void AttackSystem()
 			}
 			else
 			{
-				cout << "This is not an option, please recharge your skills first." << endl;
+				cout << "This is not an option, please recharge your skills before using them." << endl;
 			}
 		}
 		else
