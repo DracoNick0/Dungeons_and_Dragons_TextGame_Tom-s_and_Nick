@@ -12,7 +12,9 @@ enum PlayerType
 	cKnight,
 	cAssassin,
 	cTank,
-	cMage
+	cMage,
+	cAddict,
+	cDemonGod
 };
 
 enum EnemyType

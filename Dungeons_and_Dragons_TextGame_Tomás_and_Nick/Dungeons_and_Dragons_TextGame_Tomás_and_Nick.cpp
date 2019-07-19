@@ -20,7 +20,7 @@ void CharacterChoice()
 
 	cout << "Welcome my child, I shall grant you a name. What will your name be." << endl;
 	cin >> name;
-	if (name == "keegan" || name == "Keegan" || name == "Cass" || name == "cass" || name == "Will" || name == "will" )
+	if (name == "keegan" || name == "Keegan" || name == "Cass" || name == "cass" || name == "Will" || name == "will" || name == "tomick" || name == "Tomick" || name == "nick" || name == "Nick" || name == "Tomas" || name == "tomas" )
 	{
 		cout << "You Cheater! How dare you use this cheat code!";
 		exit(0);
@@ -135,7 +135,7 @@ void CharacterChoice()
 			cout << endl << "You vile DEMON SPAWN cheat code user! I shall expell you from this bountiful universe. BEGONE!" << endl;
 			temp = 1;
 			Player.PlayerisDead = false;
-			Player.playerType = cMage;
+			Player.playerType = cDemonGod;
 			Player.PlayerHP = 666;
 			Player.PlayerArmor = 666;
 			Player.PlayerHitChance = 666;
@@ -151,6 +151,29 @@ void CharacterChoice()
 			Player.PlayerSkill1Damage = 666;
 			Player.PlayerSkill2Damage = 666;
 			Player.PlayerSkill3Damage = 666;
+		}
+		else if (character == 420)
+		{
+		cout << endl << "Who do you think you are? Well first of all I'ma take this... and that... aight cya!" << endl;
+		cout << "You have lost your vaap, jule, and your wead." << endl;
+		temp = 1;
+		Player.PlayerisDead = false;
+		Player.playerType = cAddict;
+		Player.PlayerHP = 420;
+		Player.PlayerArmor = 420;
+		Player.PlayerHitChance = 420;
+		Player.PlayerHitDamage = 420;
+		Player.PlayerAddHitDamage = 420;
+		Player.PlayerCritChance = 420;
+		Player.PlayerCritDamage = 420;
+		Player.PlayerAddCritDamage = 420;
+		Player.PlayerDodge = 420;
+		Player.PlayerSkill1 = "Vaap_Ring";
+		Player.PlayerSkill2 = "Pls_just_one_hit_brooo";
+		Player.PlayerSkill3 = "Paasssss_the_Weeeeeeaaaaaaaad";
+		Player.PlayerSkill1Damage = 420;
+		Player.PlayerSkill2Damage = 420;
+		Player.PlayerSkill3Damage = 420;
 		}
 		else
 		{

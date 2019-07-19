@@ -105,11 +105,11 @@ void AttackSystem()
 			int hitchance = (rand() % 100) + 1;
 			if (hitchance > 0 && hitchance < Player.PlayerHitChance)
 			{
-				int hitdamage = (rand() % Player.PlayerHitDamage) + 1;
+				int hitdamage = (rand() % Player.PlayerHitDamage) + Player.PlayerAddHitDamage;
 				int critchance = (rand() % 100) + 1;
 				if (critchance > 0 && critchance < Player.PlayerCritChance)
 				{
-					int critdamage = (rand() % Player.PlayerCritDamage) + 1;
+					int critdamage = (rand() % Player.PlayerCritDamage) + Player.PlayerAddCritDamage;
 					cout << "Crit! " << critdamage << "!" << endl;
 					cout << "You dealt " << hitdamage + critdamage << " damage to the enemy." << endl;
 					Enemy.EnemyHP -= hitdamage + critdamage;
