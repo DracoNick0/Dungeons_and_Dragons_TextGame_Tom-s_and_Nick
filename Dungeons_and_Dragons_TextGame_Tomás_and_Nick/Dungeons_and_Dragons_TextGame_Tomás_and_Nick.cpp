@@ -53,7 +53,7 @@ void CharacterChoice()
 			Player.PlayerAddCritDamage = 5;
 			Player.PlayerAddHitDamage = 5;
 			Player.PlayerDodge = 15;
-			Player.PlayerSkill1 = "Penetrating_Slash";
+			Player.PlayerSkill1 = "Fist_Bash";
 			Player.PlayerSkill2 = "Iron_Slam";
 			Player.PlayerSkill3 = "Running_Strike";
 			Player.PlayerSkill1Damage = 24;
