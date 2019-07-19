@@ -117,6 +117,7 @@ void Story3(string name)
 	cout << "--For your second skill you need to charge up that skill to three in order to use that skill--" << endl;
 	cout << "--And for your third and final skill you need charge that skill up to four in order to use that skill--" << endl;
 	cout << "--When wanting to use a skill you have to type out the name like it is displayed on the screen--" << endl;
+	cout << "--Now that I have showed you everything you may enjoy the game!--" << endl << endl;
 	cout << "READY...FIGHT!" << endl << endl;
 	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
 	Enemy.enemyType = cHard;
