@@ -88,7 +88,7 @@ void Story2(string name)
 	Enemy.EnemyHitDamage = 10;
 	Enemy.EnemyAddHitDamage = 4;
 	Enemy.EnemyCritChance = 30;
-	Enemy.EnemyCritDamage = 7;
+	Enemy.EnemyCritDamage = 20;
 	Enemy.EnemyAddCritDamage = 7;
 	Enemy.EnemyDodge = 15;
 	EnemyManager::GetEnemyManager().SetEnemy(Enemy);
@@ -104,7 +104,7 @@ void Story3(string name)
 	cout << "-You see that you are going to fight against...-" << endl << endl;
 	cout << "-THE GRANDMASTER!-" << endl << endl;
 	cout << "-The Grandmaster walks up to you-" << endl;
-	cout << "Since you declined my money offer I thought I would show you, the almighty " << name << " some manners on how to treat your master!" << endl << endl;
+	cout << "Since you declined my money offer I thought I would show you, " << name << " some manners on how to treat your master!" << endl << endl;
 	cout << "ARE YOU READY FOR THE FINAL OF THE CONTEST OF CHAMPIONS!" << endl;
 	cout << "-The crowd cheers-" << endl;
 	cout << "READY...FIGHT!" << endl << endl;
@@ -118,7 +118,7 @@ void Story3(string name)
 	Enemy.EnemyAddHitDamage = 8;
 	Enemy.EnemyCritChance = 40;
 	Enemy.EnemyCritDamage = 10;
-	Enemy.EnemyAddCritDamage = 14;
+	Enemy.EnemyAddCritDamage = 18;
 	Enemy.EnemyDodge = 0;
 	EnemyManager::GetEnemyManager().SetEnemy(Enemy);
 }
