@@ -23,6 +23,9 @@ void EnemyAttackSystem()
 			int critdamage = (rand() % Enemy.EnemyCritDamage) + 1;
 			cout << "Crit! " << critdamage << "!" << endl;
 			cout << "The enemy dealt " << hitdamage + critdamage << " damage to you." << endl;
+			Player.PlayerHP -= hitdamage + critdamage;
+			PlayerManager::GetPlayerManager().SetPlayer(Player);
+			EnemyManager::GetEnemyManager().SetEnemy(Enemy);
 			if (Player.PlayerHP <= 0)
 			{
 				Player.PlayerHP = 0;
@@ -42,6 +45,9 @@ void EnemyAttackSystem()
 		{
 			cout << "The enemy dealt " << hitdamage << " damage to You." << endl;
 			cout << "You take the hit and stunt back." << endl;
+			Player.PlayerHP -= hitdamage;
+			PlayerManager::GetPlayerManager().SetPlayer(Player);
+			EnemyManager::GetEnemyManager().SetEnemy(Enemy);
 			if (Player.PlayerHP <= 0)
 			{
 				Player.PlayerHP = 0;
@@ -63,8 +69,6 @@ void EnemyAttackSystem()
 		cout << "The enemy missed thier attack!" << endl;
 		cout << "You still have " << Player.PlayerHP << " HP." << endl;
 	}
-	PlayerManager::GetPlayerManager().SetPlayer(Player);	
-	EnemyManager::GetEnemyManager().SetEnemy(Enemy);
 }
 
 void AttackSystem()
