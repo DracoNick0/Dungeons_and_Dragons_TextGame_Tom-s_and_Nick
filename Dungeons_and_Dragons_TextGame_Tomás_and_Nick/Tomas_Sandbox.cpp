@@ -30,8 +30,8 @@ void Story1(string name)
 	Enemy.EnemyHP = 70;
 	Enemy.EnemyArmor = 0;
 	Enemy.EnemyHitChance = 80;
-	Enemy.EnemyHitDamage = 5;
-	Enemy.EnemyAddHitDamage = 1;
+	Enemy.EnemyHitDamage = 10;
+	Enemy.EnemyAddHitDamage = 8;
 	Enemy.EnemyCritChance = 10;
 	Enemy.EnemyCritDamage = 8;
 	Enemy.EnemyAddCritDamage = 2;
@@ -86,8 +86,8 @@ void Story2(string name)
 	Enemy.EnemyHP = 100;
 	Enemy.EnemyArmor = 0;
 	Enemy.EnemyHitChance = 85;
-	Enemy.EnemyHitDamage = 10;
-	Enemy.EnemyAddHitDamage = 4;
+	Enemy.EnemyHitDamage = 15;
+	Enemy.EnemyAddHitDamage = 6;
 	Enemy.EnemyCritChance = 30;
 	Enemy.EnemyCritDamage = 20;
 	Enemy.EnemyAddCritDamage = 7;
@@ -108,7 +108,7 @@ void Story3(string name)
 	cout << "Since you declined my money offer I thought I would show you, " << name << " some manners on how to treat your master!" << endl << endl;
 	cout << "ARE YOU READY FOR THE FINAL OF THE CONTEST OF CHAMPIONS!" << endl;
 	cout << "-The crowd cheers-" << endl << endl;
-	cout << "--TUTORIAL--" << endl;
+	cout << "--TUTORIAL--" << endl << endl;
 	cout << "--Before you fight we have to tell you how the game works--" << endl;
 	cout << "--You have two options when you attack--" << endl;
 	cout << "--One is Attack and two is Special Attack-- " << endl;
@@ -125,10 +125,10 @@ void Story3(string name)
 	Enemy.EnemyHP = 200;
 	Enemy.EnemyArmor = 0;
 	Enemy.EnemyHitChance = 75;
-	Enemy.EnemyHitDamage = 10;
+	Enemy.EnemyHitDamage = 17;
 	Enemy.EnemyAddHitDamage = 8;
-	Enemy.EnemyCritChance = 40;
-	Enemy.EnemyCritDamage = 10;
+	Enemy.EnemyCritChance = 35;
+	Enemy.EnemyCritDamage = 15;
 	Enemy.EnemyAddCritDamage = 18;
 	Enemy.EnemyDodge = 0;
 	EnemyManager::GetEnemyManager().SetEnemy(Enemy);
