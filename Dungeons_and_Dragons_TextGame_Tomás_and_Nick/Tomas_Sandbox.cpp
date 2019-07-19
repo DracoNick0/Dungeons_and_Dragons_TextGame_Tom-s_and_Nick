@@ -49,6 +49,7 @@ void Story2(string name)
 	cout << "-As you walk around you find the Grandmaster at his desk sipping on some ginger beer-" << endl << endl;
 	cout << "I've been expecting you, " << name << " here take a seat" << endl << endl;
 	cout << "-You sit down-" << endl << endl;
+
 	cout << "Here let me give you drink, sorry I dont have any no no juice, Dr.Mairio said that I shoudn't get dizzy on a weekday." << endl << endl;
 	cout << "-You sip on your drink-" << endl << endl;
 	cout << "I've been thinking about your performance in the contest you are doing good, too good..." << endl << endl;
