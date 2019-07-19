@@ -30,8 +30,8 @@ void Story1(string name)
 	Enemy.EnemyHP = 70;
 	Enemy.EnemyArmor = 0;
 	Enemy.EnemyHitChance = 80;
-	Enemy.EnemyHitDamage = 5;
-	Enemy.EnemyAddHitDamage = 1;
+	Enemy.EnemyHitDamage = 10;
+	Enemy.EnemyAddHitDamage = 8;
 	Enemy.EnemyCritChance = 10;
 	Enemy.EnemyCritDamage = 8;
 	Enemy.EnemyAddCritDamage = 2;
@@ -49,6 +49,7 @@ void Story2(string name)
 	cout << "-As you walk around you find the Grandmaster at his desk sipping on some ginger beer-" << endl << endl;
 	cout << "I've been expecting you, " << name << " here take a seat" << endl << endl;
 	cout << "-You sit down-" << endl << endl;
+
 	cout << "Here let me give you drink, sorry I dont have any no no juice, Dr.Mairio said that I shoudn't get dizzy on a weekday." << endl << endl;
 	cout << "-You sip on your drink-" << endl << endl;
 	cout << "I've been thinking about your performance in the contest you are doing good, too good..." << endl << endl;
@@ -85,8 +86,8 @@ void Story2(string name)
 	Enemy.EnemyHP = 100;
 	Enemy.EnemyArmor = 0;
 	Enemy.EnemyHitChance = 85;
-	Enemy.EnemyHitDamage = 10;
-	Enemy.EnemyAddHitDamage = 4;
+	Enemy.EnemyHitDamage = 15;
+	Enemy.EnemyAddHitDamage = 6;
 	Enemy.EnemyCritChance = 30;
 	Enemy.EnemyCritDamage = 20;
 	Enemy.EnemyAddCritDamage = 7;
@@ -106,7 +107,17 @@ void Story3(string name)
 	cout << "-The Grandmaster walks up to you-" << endl;
 	cout << "Since you declined my money offer I thought I would show you, " << name << " some manners on how to treat your master!" << endl << endl;
 	cout << "ARE YOU READY FOR THE FINAL OF THE CONTEST OF CHAMPIONS!" << endl;
-	cout << "-The crowd cheers-" << endl;
+	cout << "-The crowd cheers-" << endl << endl;
+	cout << "--TUTORIAL--" << endl << endl;
+	cout << "--Before you fight we have to tell you how the game works--" << endl;
+	cout << "--You have two options when you attack--" << endl;
+	cout << "--One is Attack and two is Special Attack-- " << endl;
+	cout << "--You may use Attack as much as you want, Attack charges up the Special Attack--" << endl;
+	cout << "--But for Special Attack you need to charge that skill to two in order to use that skill--" << endl;
+	cout << "--For your second skill you need to charge up that skill to three in order to use that skill--" << endl;
+	cout << "--And for your third and final skill you need charge that skill up to four in order to use that skill--" << endl;
+	cout << "--When wanting to use a skill you have to type out the name like it is displayed on the screen--" << endl;
+	cout << "--Now that I have showed you everything you may enjoy the game!--" << endl << endl;
 	cout << "READY...FIGHT!" << endl << endl;
 	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
 	Enemy.enemyType = cHard;
@@ -114,10 +125,10 @@ void Story3(string name)
 	Enemy.EnemyHP = 200;
 	Enemy.EnemyArmor = 0;
 	Enemy.EnemyHitChance = 75;
-	Enemy.EnemyHitDamage = 10;
+	Enemy.EnemyHitDamage = 17;
 	Enemy.EnemyAddHitDamage = 8;
-	Enemy.EnemyCritChance = 40;
-	Enemy.EnemyCritDamage = 10;
+	Enemy.EnemyCritChance = 35;
+	Enemy.EnemyCritDamage = 15;
 	Enemy.EnemyAddCritDamage = 18;
 	Enemy.EnemyDodge = 0;
 	EnemyManager::GetEnemyManager().SetEnemy(Enemy);
