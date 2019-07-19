@@ -95,7 +95,7 @@ void Story2(string name)
 	Enemy.EnemyHitChance = 85;
 	Enemy.EnemyHitDamage = 15;
 	Enemy.EnemyAddHitDamage = 6;
-	Enemy.EnemyCritChance = 30;
+	Enemy.EnemyCritChance = 20;
 	Enemy.EnemyCritDamage = 20;
 	Enemy.EnemyAddCritDamage = 7;
 	Enemy.EnemyDodge = 15;
@@ -124,7 +124,7 @@ void Story3(string name)
 	Enemy.EnemyHitChance = 75;
 	Enemy.EnemyHitDamage = 17;
 	Enemy.EnemyAddHitDamage = 8;
-	Enemy.EnemyCritChance = 35;
+	Enemy.EnemyCritChance = 25;
 	Enemy.EnemyCritDamage = 15;
 	Enemy.EnemyAddCritDamage = 18;
 	Enemy.EnemyDodge = 0;
