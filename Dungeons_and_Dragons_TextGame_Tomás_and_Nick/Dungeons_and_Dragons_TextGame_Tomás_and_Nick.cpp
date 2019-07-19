@@ -20,10 +20,23 @@ void CharacterChoice()
 
 	cout << "Welcome my child, I shall grant you a name. What will your name be." << endl;
 	cin >> name;
-	if (name == "keegan" || name == "Keegan" || name == "Cass" || name == "cass" || name == "Will" || name == "will" || name == "tomick" || name == "Tomick" || name == "nick" || name == "Nick" || name == "Tomas" || name == "tomas" )
+	if (name == "keegan" || name == "Keegan" || name == "Cass" || name == "cass" || name == "Will" || name == "will" || name == "tomick" || name == "Tomick" || name == "nick" || name == "Nick" || name == "Tomas" || name == "tomas")
 	{
 		cout << "You Cheater! How dare you use this cheat code!";
 		exit(0);
+	}
+	if (name == "CharlieCharlie" || name == "Charlie")
+	{
+		cout << "ooooooOOOOOOOOOHHHHHhhhhh... OooooooohhhhHHHHHOOOOO..." << endl;
+		cout << "-You become scared-";
+		exit;
+	}
+	if (name == "tina" || name == "Tina" || name == "Jerry" || name == "jerry" || name == "Juan" || name == "juan" || name == "kelly" || name == "Kelly")
+	{
+		cout << "Ugh... Parents. Cya..."<< endl;
+		cout << "--WAIT--" << endl;
+		cout << "(Parents play video games? WTH?)";
+		exit;
 	}
 	
 	cout << endl << "Fine, I shall grant you the name, " << name << "." << endl;
