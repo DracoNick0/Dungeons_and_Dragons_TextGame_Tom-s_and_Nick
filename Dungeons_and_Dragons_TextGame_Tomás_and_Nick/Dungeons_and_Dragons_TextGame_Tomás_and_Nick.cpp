@@ -55,7 +55,7 @@ void CharacterChoice()
 			Player.PlayerDodge = 15;
 			Player.PlayerSkill1 = "Penetrating_Slash";
 			Player.PlayerSkill2 = "Iron_Slam";
-			Player.PlayerSkill3 = "Running_Strike";//stun
+			Player.PlayerSkill3 = "Running_Strike";
 			Player.PlayerSkill1Damage = 24;
 			Player.PlayerSkill2Damage = 28;
 			Player.PlayerSkill3Damage = 35;
@@ -78,7 +78,7 @@ void CharacterChoice()
 			Player.PlayerDodge = 45;
 			Player.PlayerSkill1 = "Napkin_Shank";
 			Player.PlayerSkill2 = "Shadow_Leap";
-			Player.PlayerSkill3 = "Smoke_Bomb"; //stun
+			Player.PlayerSkill3 = "Smoke_Bomb";
 			
 			Player.PlayerSkill1Damage = 17;
 			Player.PlayerSkill2Damage = 22;
@@ -102,7 +102,7 @@ void CharacterChoice()
 			Player.PlayerDodge = 2;
 			Player.PlayerSkill1 = "Upper_Cut";
 			Player.PlayerSkill2 = "Belly_Slam";
-			Player.PlayerSkill3 = "Earthquake"; //stun
+			Player.PlayerSkill3 = "Earthquake";
 			Player.PlayerSkill1Damage = 18;
 			Player.PlayerSkill2Damage = 30;
 			Player.PlayerSkill3Damage = 40;
@@ -125,7 +125,7 @@ void CharacterChoice()
 			Player.PlayerDodge = 12;
 			Player.PlayerSkill1 = "Fire_Ball";
 			Player.PlayerSkill2 = "Nature's_Touch";
-			Player.PlayerSkill3 = "Mage's_Trance"; //stun
+			Player.PlayerSkill3 = "Mage's_Trance";
 			Player.PlayerSkill1Damage = 10;
 			Player.PlayerSkill2Damage = 25;
 			Player.PlayerSkill3Damage = 35;
@@ -147,7 +147,7 @@ void CharacterChoice()
 			Player.PlayerDodge = 666;
 			Player.PlayerSkill1 = "Soul_Absorption";
 			Player.PlayerSkill2 = "Hell's_Wrath";
-			Player.PlayerSkill3 = "Soul_Shatter";//stun
+			Player.PlayerSkill3 = "Soul_Shatter";
 			Player.PlayerSkill1Damage = 666;
 			Player.PlayerSkill2Damage = 666;
 			Player.PlayerSkill3Damage = 666;
