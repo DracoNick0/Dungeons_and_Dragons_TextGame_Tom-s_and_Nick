@@ -107,7 +107,17 @@ void Story3(string name)
 	cout << "-The Grandmaster walks up to you-" << endl;
 	cout << "Since you declined my money offer I thought I would show you, " << name << " some manners on how to treat your master!" << endl << endl;
 	cout << "ARE YOU READY FOR THE FINAL OF THE CONTEST OF CHAMPIONS!" << endl;
-	cout << "-The crowd cheers-" << endl;
+	cout << "-The crowd cheers-" << endl << endl;
+	cout << "--TUTORIAL--" << endl;
+	cout << "--Before you fight we have to tell you how the game works--" << endl;
+	cout << "--You have two options when you attack--" << endl;
+	cout << "--One is Attack and two is Special Attack-- " << endl;
+	cout << "--You may use Attack as much as you want, Attack charges up the Special Attack--" << endl;
+	cout << "--But for Special Attack you need to charge that skill to two in order to use that skill--" << endl;
+	cout << "--For your second skill you need to charge up that skill to three in order to use that skill--" << endl;
+	cout << "--And for your third and final skill you need charge that skill up to four in order to use that skill--" << endl;
+	cout << "--When wanting to use a skill you have to type out the name like it is displayed on the screen--" << endl;
+	cout << "--Now that I have showed you everything you may enjoy the game!--" << endl << endl;
 	cout << "READY...FIGHT!" << endl << endl;
 	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
 	Enemy.enemyType = cHard;
