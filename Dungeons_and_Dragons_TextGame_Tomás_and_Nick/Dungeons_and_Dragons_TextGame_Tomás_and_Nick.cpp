@@ -19,6 +19,7 @@ void CharacterChoice()
 
 
 	cout << "Welcome my child, I shall grant you a name. What will your name be." << endl;
+	cout << "--Please no spaces in your name--" << endl;
 	cin >> name;
 	if (name == "keegan" || name == "Keegan" || name == "Cass" || name == "cass" || name == "Will" || name == "will" || name == "tomick" || name == "Tomick" || name == "nick" || name == "Nick" || name == "Tomas" || name == "tomas")
 	{
@@ -29,14 +30,18 @@ void CharacterChoice()
 	{
 		cout << "ooooooOOOOOOOOOHHHHHhhhhh... OooooooohhhhHHHHHOOOOO..." << endl;
 		cout << "-You become scared-";
-		exit;
+		exit(0);
 	}
 	if (name == "tina" || name == "Tina" || name == "Jerry" || name == "jerry" || name == "Juan" || name == "juan" || name == "kelly" || name == "Kelly")
 	{
 		cout << "Ugh... Parents. Cya..."<< endl;
 		cout << "--WAIT--" << endl;
 		cout << "(Parents play video games? WTH?)";
-		exit;
+		exit(0);
+	}
+	if (name == "[          ]")
+	{
+		cout << "Hahaha... you damn cheater..." << endl;
 	}
 	
 	cout << endl << "Fine, I shall grant you the name, " << name << "." << endl;
