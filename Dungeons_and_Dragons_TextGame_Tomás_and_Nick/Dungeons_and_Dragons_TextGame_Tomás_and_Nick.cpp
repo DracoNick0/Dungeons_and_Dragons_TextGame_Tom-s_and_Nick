@@ -121,9 +121,9 @@ void CharacterChoice()
 			Player.PlayerSkill1 = "Upper_Cut";
 			Player.PlayerSkill2 = "Belly_Slam";
 			Player.PlayerSkill3 = "Earthquake";
-			Player.PlayerSkill1Damage = 18;
-			Player.PlayerSkill2Damage = 30;
-			Player.PlayerSkill3Damage = 40;
+			Player.PlayerSkill1Damage = 24;
+			Player.PlayerSkill2Damage = 38;
+			Player.PlayerSkill3Damage = 58;
 		}
 		else if (character == 4)
 		{

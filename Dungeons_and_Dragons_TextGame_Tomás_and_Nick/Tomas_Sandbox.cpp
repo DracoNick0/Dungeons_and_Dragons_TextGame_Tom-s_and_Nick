@@ -122,7 +122,7 @@ void Story3(string name)
 	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
 	Enemy.enemyType = cHard;
 	Enemy.EnemyisDead = false;
-	Enemy.EnemyHP = 200;
+	Enemy.EnemyHP = 150;
 	Enemy.EnemyArmor = 0;
 	Enemy.EnemyHitChance = 75;
 	Enemy.EnemyHitDamage = 17;
