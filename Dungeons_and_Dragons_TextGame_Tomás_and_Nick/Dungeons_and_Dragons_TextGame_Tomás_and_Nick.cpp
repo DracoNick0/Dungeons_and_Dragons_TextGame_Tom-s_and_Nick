@@ -8,18 +8,12 @@
 #include "Player.h"
 using namespace std;
 
-float character, player;
+float character, player, i , choice;
 string name;
 
 void CharacterChoice()
 {
 	tempplayer Player = PlayerManager::GetPlayerManager().GetPlayer();
-
-	cout << "Before you proceed we would like to present you with some info and rules so this game will be easy to pick up." << endl << endl;
-	this_thread::sleep_for(std::chrono::milliseconds(500));
-	cout << "1. This game is an input based game, whatever you input will effect what you do ingame." << endl;
-	cout << "2. Most of the inputs will be numbers, so please keep it to numbers(exept for your name)." << endl;
-
 
 	cout << "Welcome my child, I shall grant you a name. What will your name be." << endl;
 	getline(cin, name);
@@ -47,6 +41,34 @@ void CharacterChoice()
 	}
 
 	cout << endl << "Fine, I shall grant you the name, " << name << "." << endl;
+	cout << "--Wait! Before you proceed press 1 if you would like the rules, otherwise press 2--" << endl;
+	while (i == 0)
+	{
+		cin >> choice;
+		if (choice == 1)
+		{
+			cout << endl << "--RULES--" << endl << endl;
+			this_thread::sleep_for(std::chrono::milliseconds(500));
+			cout << "--Before you fight we have to tell you how the game works or else... Uhh... It won't work--" << endl;
+			cout << "--When a fight begins, you will always have two choices, press 1 for attack and 2 for special attack--" << endl;
+			cout << "--Regular attacks will charge up your special and can be used whenever--" << endl;
+			cout << "--For Special Attacks: Attack 1 needs 2 charges, Attack 2 needs 3 charges and Attack 3 needs 4 charges--" << endl;
+			cout << "--To use a special attack you must choose the Special Attack and then type out it's name(use an underscore in place of a space)--" << endl;
+			cout << "--Press enter when you are ready to proceed, and please enjoy our game!--" << endl;
+			break;
+		}
+		if (choice == 2)
+		{
+			break;
+		}
+		else
+		{
+			cout << "Please pick again." << endl;
+		}
+	}
+
+
+
 	cout << "I will give you a decision, a choice! What will you be? A warrior? An asssassin? A tank? Or a Mage?" << endl;
 	this_thread::sleep_for(std::chrono::milliseconds(1000));
 	cout << "1. Knight" << endl;

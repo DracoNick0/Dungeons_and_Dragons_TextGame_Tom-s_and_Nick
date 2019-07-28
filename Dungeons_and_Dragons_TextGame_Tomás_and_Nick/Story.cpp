@@ -12,34 +12,6 @@ void Story1(string name)
 {
 	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
 
-	cout << "Enter 1 if you would like the rules, otherwise input 2." << endl;
-	int i = 0, choice;
-	while (i == 0)
-	{
-		cin >> choice;
-		if (choice == 1)
-		{
-			cout << endl << "--RULES--" << endl << endl;
-			this_thread::sleep_for(std::chrono::milliseconds(2000));
-			cout << "--Before you fight we have to tell you how the game works or else... Uhh... It won't work--" << endl;
-			cout << "--You have two options when it is your turn--" << endl;
-			cout << "--1. is to use a regular Attack and 2. is to use a Special Attack-- " << endl;
-			cout << "--You may use Attack as much as you want, but the Special Attack must be charged up--" << endl;
-			cout << "--For Special Attacks: Attack 1 needs 2 charges, Attack 2 needs 3 charges and Attack 3 needs 4 charges--" << endl;
-			cout << "--To use a special attack you must choose Special Attack and then type out it's name(use an underscore in place of a space)--" << endl;
-			cout << "--Now that I have showed you everything you may proceed!--" << endl;
-			break;
-		}
-		if (choice == 2)
-		{
-			break;
-		}
-		else
-		{
-			i = 0;
-		}
-	}
-
 	cout << "--THE STORY BEGINS--" << endl << endl;
 	this_thread::sleep_for(std::chrono::milliseconds(3000));
 	cout << "Hey, Wake up! Wake up! The contest is about to begin." << endl;
