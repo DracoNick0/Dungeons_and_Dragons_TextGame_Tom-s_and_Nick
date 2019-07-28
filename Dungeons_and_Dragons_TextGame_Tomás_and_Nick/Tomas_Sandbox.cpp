@@ -3,8 +3,6 @@
 #include "Tomas_Sandbox.h"
 #include <stdio.h>
 #include "Player.h"
-#include "Nicholas_Sandbox.h"
-
 using namespace std;
 
 

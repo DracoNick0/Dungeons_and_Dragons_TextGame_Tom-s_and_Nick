@@ -3,10 +3,7 @@
 #include <time.h>
 #include <stdio.h>
 #include "Tomas_Sandbox.h"
-#include "Nicholas_Sandbox.h"
 #include "Player.h"
-
-///Hey!... Over here! I made it so that we can have spaces in our name!
 
 using namespace std;
 

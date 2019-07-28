@@ -152,12 +152,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Dungeons_and_Dragons_TextGame_Tomás_and_Nick.cpp" />
-    <ClCompile Include="Nicholas_Sandbox.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Tomas_Sandbox.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Nicholas_Sandbox.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Tomas_Sandbox.h" />
   </ItemGroup>
