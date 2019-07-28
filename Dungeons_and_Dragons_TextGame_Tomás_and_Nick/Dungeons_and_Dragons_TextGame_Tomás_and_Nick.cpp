@@ -6,12 +6,13 @@
 #include "Nicholas_Sandbox.h"
 #include "Player.h"
 
+///Hey!... Over here! I made it so that we can have spaces in our name!
 
 using namespace std;
 
 float character;
 float player;
-string name;
+char name[25];
 
 void CharacterChoice()
 {
@@ -19,8 +20,7 @@ void CharacterChoice()
 
 
 	cout << "Welcome my child, I shall grant you a name. What will your name be." << endl;
-	cout << "--Please no spaces in your name--" << endl;
-	cin >> name;
+	cin.getline(name,25);
 	if (name == "keegan" || name == "Keegan" || name == "Cass" || name == "cass" || name == "Will" || name == "will" || name == "tomick" || name == "Tomick" || name == "nick" || name == "Nick" || name == "Tomas" || name == "tomas")
 	{
 		cout << "You Cheater! How dare you use this cheat code!";
