@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include "Tomas_Sandbox.h"
+#include "Story.h"
 #include "Player.h"
 using namespace std;
 string choice2;

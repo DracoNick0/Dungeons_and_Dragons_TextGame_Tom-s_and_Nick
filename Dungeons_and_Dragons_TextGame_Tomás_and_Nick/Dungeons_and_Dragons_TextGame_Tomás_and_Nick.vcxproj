@@ -153,11 +153,11 @@
   <ItemGroup>
     <ClCompile Include="Dungeons_and_Dragons_TextGame_Tomás_and_Nick.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Tomas_Sandbox.cpp" />
+    <ClCompile Include="Story.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Tomas_Sandbox.h" />
+    <ClInclude Include="Story.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

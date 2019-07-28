@@ -1,15 +1,17 @@
- #include <iostream>
+#include <iostream>
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include "Tomas_Sandbox.h"
+#include "Story.h"
 #include "Player.h"
+#include <thread>
+#include <chrono>
 
 using namespace std;
 
 float character;
 float player;
-char name[25];
+string name;
 
 void CharacterChoice()
 {
@@ -17,7 +19,7 @@ void CharacterChoice()
 
 
 	cout << "Welcome my child, I shall grant you a name. What will your name be." << endl;
-	cin.getline(name,25);
+	getline(cin, name);
 	if (name == "keegan" || name == "Keegan" || name == "Cass" || name == "cass" || name == "Will" || name == "will" || name == "tomick" || name == "Tomick" || name == "nick" || name == "Nick" || name == "Tomas" || name == "tomas")
 	{
 		cout << "You Cheater! How dare you use this cheat code!";
@@ -40,12 +42,16 @@ void CharacterChoice()
 	{
 		cout << "Hahaha... you damn cheater..." << endl;
 	}
-	
+
 	cout << endl << "Fine, I shall grant you the name, " << name << "." << endl;
 	cout << "I will give you a decision, a choice! What will you be? A warrior? An asssassin? A tank? Or a Mage?" << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(1000));
 	cout << "1. Knight" << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(300));
 	cout << "2. Assassin" << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(300));
 	cout << "3. Tank" << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(300));
 	cout << "4. Mage" << endl;
 
 	float temp = 0;
@@ -55,7 +61,9 @@ void CharacterChoice()
 		if (character == 1)
 		{
 			cout << endl << "Exellent choice! You have chosen to become a knight. I shall grant you with a variety of skills, a starter sword and a set of armor and your desposal!" << endl;
+			this_thread::sleep_for(std::chrono::milliseconds(400));
 			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
+			this_thread::sleep_for(std::chrono::milliseconds(1000));
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cKnight;
@@ -78,7 +86,9 @@ void CharacterChoice()
 		else if (character == 2)
 		{
 			cout << endl << "Exellent choice! You have chosen to become an assassin. I shall grant you with a steathy body, sneaky hands and a starter pair of daggers at your desposal!" << endl;
+			this_thread::sleep_for(std::chrono::milliseconds(400));
 			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
+			this_thread::sleep_for(std::chrono::milliseconds(1000));
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cAssassin;
@@ -102,7 +112,9 @@ void CharacterChoice()
 		else if (character == 3)
 		{
 			cout << endl << "Exellent choice! You have chosen to become a tank. I shall grant you with a sturdy body, knowlage of support skills and a heavy starter shield at your desposal!" << endl;
+			this_thread::sleep_for(std::chrono::milliseconds(400));
 			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
+			this_thread::sleep_for(std::chrono::milliseconds(1000));
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cTank;
@@ -125,7 +137,9 @@ void CharacterChoice()
 		else if (character == 4)
 		{
 			cout << endl << "Fine, you have chosen to become a Mage so I shall grant you the skill to converse with spirits, the power to enchant your voice with elements and the knowlage of ancient runes!" << endl;
+			this_thread::sleep_for(std::chrono::milliseconds(400));
 			cout << "Now go to sleep my child, you shall soon awake in a new bountiful world." << endl << endl;
+			this_thread::sleep_for(std::chrono::milliseconds(1000));
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cMage;
@@ -147,7 +161,9 @@ void CharacterChoice()
 		}
 		else if (character == 666)
 		{
-			cout << endl << "You vile DEMON SPAWN cheat code user! I shall expell you from this bountiful universe. BEGONE!" << endl;
+			name = "[          ]";
+			cout << endl << "You vile DEMON SPAWN cheat code user [          ]! How dare you try and decieve me! You shall be expelled from this bountiful universe. BEGONE!" << endl;
+			this_thread::sleep_for(std::chrono::milliseconds(1000));
 			temp = 1;
 			Player.PlayerisDead = false;
 			Player.playerType = cDemonGod;
@@ -169,8 +185,10 @@ void CharacterChoice()
 		}
 		else if (character == 420)
 		{
-		cout << endl << "Who do you think you are? Well first of all I'ma take this... and that... aight cya!" << endl;
-		cout << "You have lost your vaap, jule, and your wead." << endl;
+		cout << endl << "Who do you think you are? Well first of all I'ma take this... and that... and that... aight cya!" << endl;
+		this_thread::sleep_for(std::chrono::milliseconds(400));
+		cout << "-You have lost your vaip, jule, and your wead-" << endl;
+		this_thread::sleep_for(std::chrono::milliseconds(1000));
 		temp = 1;
 		Player.PlayerisDead = false;
 		Player.playerType = cAddict;
