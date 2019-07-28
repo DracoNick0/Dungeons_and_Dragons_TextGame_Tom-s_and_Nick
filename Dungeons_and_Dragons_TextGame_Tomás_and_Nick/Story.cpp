@@ -1,34 +1,70 @@
 #include <iostream>
 #include <stdlib.h>
-#include "Story.h"
 #include <stdio.h>
+#include <thread>
+#include <chrono>
 #include "Player.h"
+#include "Story.h"
 using namespace std;
 
 
 void Story1(string name)
 {
 	tempenemy Enemy = EnemyManager::GetEnemyManager().GetEnemy();
+
+	cout << "Enter 1 if you would like the rules, otherwise input 2." << endl;
+	int i = 0, choice;
+	while (i == 0)
+	{
+		cin >> choice;
+		if (choice == 1)
+		{
+			cout << endl << "--RULES--" << endl << endl;
+			this_thread::sleep_for(std::chrono::milliseconds(2000));
+			cout << "--Before you fight we have to tell you how the game works or else... Uhh... It won't work--" << endl;
+			cout << "--You have two options when it is your turn--" << endl;
+			cout << "--1. is to use a regular Attack and 2. is to use a Special Attack-- " << endl;
+			cout << "--You may use Attack as much as you want, but the Special Attack must be charged up--" << endl;
+			cout << "--For Special Attacks: Attack 1 needs 2 charges, Attack 2 needs 3 charges and Attack 3 needs 4 charges--" << endl;
+			cout << "--To use a special attack you must choose Special Attack and then type out it's name(use an underscore in place of a space)--" << endl;
+			cout << "--Now that I have showed you everything you may proceed!--" << endl;
+			break;
+		}
+		if (choice == 2)
+		{
+			break;
+		}
+		else
+		{
+			i = 0;
+		}
+	}
+
 	cout << "--THE STORY BEGINS--" << endl << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(3000));
 	cout << "Hey, Wake up! Wake up! The contest is about to begin." << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(1000));
 	cout << "The Grandmaster wants all champions to be ready for the big fight." << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(1000));
 	cout << "Wait... You are the almighty " << name << " right? The Grandmaster was excited when you agreed to this." << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(1000));
 	cout << "Oh, I'm sorry I haven't properly introduced myslef my name is Tomick your guide throughout the contest." << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(1000));
 	cout << "Now look your first opponent is the a county champion from Greenwood. Good Luck." << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(1000));
 	cout << "-Two guards grab your arms and shove you into the arena-" << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(1000));
 	cout << "-The Gate slams behind you, and you hear the boo's coming from the audience-" << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(1000));
 	cout << "-Another gate closes and you hear the cheer of the croud-" << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(1000));
 	cout << "-Your heart beats faster and faster-" << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(1000));
 	cout << "-And you are ready-" << endl << endl;
-	cout << "--RULES--" << endl << endl;
-	cout << "--Before you fight we have to tell you how the game works or else... Uhh... It won't work--" << endl;
-	cout << "--You have two options when it is your turn--" << endl;
-	cout << "--1. is to use a regular Attack and 2. is to use a Special Attack-- " << endl;
-	cout << "--You may use Attack as much as you want, but the Special Attack must be charged up--" << endl;
-	cout << "--For Special Attacks: Attack 1 needs 2 charges, Attack 2 needs 3 charges and Attack 3 needs 4 charges--" << endl;
-	cout << "--To use a special attack you must choose Special Attack and then type out it's name(use an underscore in place of a space)--" << endl << endl;
-	cout << "--Now that I have showed you everything you may enjoy the game!--" << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(1000));
+
 	cout << "READY... BEGIN!" << endl << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(500));
 	cout << "The enemy is ready to fight, what do you do?" << endl;
 	Enemy.enemyType = cEasy;
 	Enemy.EnemyisDead = false;

@@ -2,20 +2,23 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include "Story.h"
-#include "Player.h"
 #include <thread>
 #include <chrono>
-
+#include "Story.h"
+#include "Player.h"
 using namespace std;
 
-float character;
-float player;
+float character, player;
 string name;
 
 void CharacterChoice()
 {
 	tempplayer Player = PlayerManager::GetPlayerManager().GetPlayer();
+
+	cout << "Before you proceed we would like to present you with some info and rules so this game will be easy to pick up." << endl << endl;
+	this_thread::sleep_for(std::chrono::milliseconds(500));
+	cout << "1. This game is an input based game, whatever you input will effect what you do ingame." << endl;
+	cout << "2. Most of the inputs will be numbers, so please keep it to numbers(exept for your name)." << endl;
 
 
 	cout << "Welcome my child, I shall grant you a name. What will your name be." << endl;
@@ -162,7 +165,7 @@ void CharacterChoice()
 		else if (character == 666)
 		{
 			name = "[          ]";
-			cout << endl << "You vile DEMON SPAWN cheat code user [          ]! How dare you try and decieve me! You shall be expelled from this bountiful universe. BEGONE!" << endl;
+			cout << endl << "You vile DEMON SPAWN cheat code user [          ]! How dare you try and decieve me! You shall be expelled from this bountiful universe. BEGONE!" << endl << endl;
 			this_thread::sleep_for(std::chrono::milliseconds(1000));
 			temp = 1;
 			Player.PlayerisDead = false;
@@ -187,7 +190,7 @@ void CharacterChoice()
 		{
 		cout << endl << "Who do you think you are? Well first of all I'ma take this... and that... and that... aight cya!" << endl;
 		this_thread::sleep_for(std::chrono::milliseconds(400));
-		cout << "-You have lost your vaip, jule, and your wead-" << endl;
+		cout << "-You have lost your vaip, jule, and your wead-" << endl << endl;
 		this_thread::sleep_for(std::chrono::milliseconds(1000));
 		temp = 1;
 		Player.PlayerisDead = false;
